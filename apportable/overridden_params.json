@@ -181,7 +181,6 @@
     // where it should be compiled, e.g.,
     // {"source": "./PngImageLoader.m", "flags": ["-fstack-protector"], "defines": {"PNG": 1}, "env": {"TARGET_TEXTURE_FMT": "png"}}
     "sources": [
-        "stubs.m",
         "libs/cocos2d-iphone/cocos2d/CCAction.m",
         "libs/cocos2d-iphone/cocos2d/CCActionCamera.m",
         "libs/cocos2d-iphone/cocos2d/CCActionEase.m",

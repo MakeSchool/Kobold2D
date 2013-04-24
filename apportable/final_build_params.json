@@ -2832,10 +2832,6 @@
             "language": "objc"
         }, 
         {
-            "source": "stubs.m", 
-            "language": "objc"
-        }, 
-        {
             "source": "libs/cocos2d-iphone/cocos2d/CCActionTiledGrid.m", 
             "language": "objc"
         }, 
