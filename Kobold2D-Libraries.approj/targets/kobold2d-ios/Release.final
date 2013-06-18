@@ -1,11 +1,12 @@
 {
     "xcode_project": "Kobold2D-Libraries.xcodeproj", 
-    "hmaps": {}, 
+    "java_sources": [], 
     "pchs": [
         "./prefix/Prefix-iOS.pch"
     ], 
     "assets": [], 
-    "moms": [], 
+    "link_flags": [], 
+    "hmaps": {}, 
     "config": {}, 
     "header_paths": [
         {
@@ -2136,7 +2137,8 @@
         {
             "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include", 
             "type": "I"
-        }
+        }, 
+        "libs/Box2D"
     ], 
     "modules": [], 
     "sources": [
@@ -2155,11 +2157,11 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Support/CCFileUtils.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCAction.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/ccGLStateCache.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCActionManager.m", 
             "language": "objc"
         }, 
         {
@@ -2182,16 +2184,36 @@
             "language": "objc"
         }, 
         {
+            "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCGLView.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Common/b2Settings.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Collision/b2Collision.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/external/kazmath/src/plane.c", 
             "language": "c"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Support/CCFileUtils.m", 
+            "language": "objc"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCActionProgressTimer.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/external/kazmath/src/vec3.c", 
-            "language": "c"
+            "source": "libs/Box2D/Box2D/Collision/b2CollidePolygon.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/lua/src/ldebug.c", 
@@ -2201,8 +2223,8 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCActionManager.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Common/b2Timer.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "kobold2d/KKHitTest.m", 
@@ -2217,6 +2239,10 @@
             "flags": [], 
             "language": "c", 
             "defines": {}
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Collision/b2BroadPhase.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "kobold2d/KKInputKeyboard.m", 
@@ -2241,31 +2267,43 @@
             "defines": {}
         }, 
         {
-            "source": "libs/lua/src/ldo.c", 
+            "source": "libs/Box2D/Box2D/Common/b2StackAllocator.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "kobold2d/KKInputMouse.m", 
             "header_paths": [], 
             "flags": [], 
-            "language": "c", 
+            "language": "objc", 
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCTMXTiledMap.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp", 
+            "language": "c++"
         }, 
         {
-            "source": "libs/cocos2d-iphone/external/kazmath/src/utility.c", 
-            "language": "c"
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCCamera.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Support/ccCArray.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCActionTween.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/external/kazmath/src/aabb.c", 
-            "language": "c"
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2ContactSolver.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/b2WorldCallbacks.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/b2ContactManager.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCDrawingPrimitives.m", 
@@ -2279,27 +2317,27 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCActionTween.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Collision/Shapes/b2EdgeShape.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCTextureCache.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/lua/src/lmathlib.c", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "c", 
-            "defines": {}
+            "source": "libs/Box2D/Box2D/Collision/b2Distance.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/Support/TGAlib.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Platforms/Mac/CCDirectorMac.m", 
-            "language": "objc"
+            "source": "libs/lua/src/ldo.c", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "c", 
+            "defines": {}
         }, 
         {
             "source": "kobold2d/KKScreenshot.m", 
@@ -2309,8 +2347,8 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCGLView.m", 
-            "language": "objc"
+            "source": "libs/cocos2d-iphone/external/kazmath/src/aabb.c", 
+            "language": "c"
         }, 
         {
             "source": "libs/cocos2d-iphone/CocosDenshion/CDAudioManager.m", 
@@ -2321,15 +2359,23 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/SneakyInput/Classes/SneakyButtonSkinnedBase.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCGLProgram.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Rope/b2Rope.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2Joint.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCMotionStreak.m", 
-            "language": "objc"
-        }, 
-        {
-            "source": "libs/SneakyInput/Classes/SneakyButton.m", 
             "language": "objc"
         }, 
         {
@@ -2342,6 +2388,14 @@
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCSprite.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Support/ccCArray.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Common/b2Draw.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "kobold2d/cocos2d-ext/CCAlphaTestSpriteBatchNode.m", 
@@ -2391,8 +2445,16 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCTransitionPageTurn.m", 
+            "source": "libs/SneakyInput/Classes/SneakyButtonSkinnedBase.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2WeldJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/b2Fixture.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCSpriteBatchNode.m", 
@@ -2422,6 +2484,10 @@
             "language": "c"
         }, 
         {
+            "source": "libs/cocos2d-iphone/cocos2d/CCParticleBatchNode.m", 
+            "language": "objc"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/cocos2d/CCDrawNode.m", 
             "language": "objc"
         }, 
@@ -2431,6 +2497,10 @@
             "flags": [], 
             "language": "c", 
             "defines": {}
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2PolygonContact.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCLabelTTF.m", 
@@ -2475,6 +2545,10 @@
             "language": "objc"
         }, 
         {
+            "source": "libs/Box2D/Box2D/Dynamics/b2World.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/cocos2d/CCPhysicsSprite.mm", 
             "language": "objc++"
         }, 
@@ -2490,8 +2564,12 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCParticleBatchNode.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCNode.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/b2Island.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/lua/src/lapi.c", 
@@ -2553,8 +2631,8 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCTexture2D.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Collision/Shapes/b2CircleShape.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/lua/src/ltablib.c", 
@@ -2571,7 +2649,7 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone-extensions/Extensions/CCScrollLayer/CCScrollLayer.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCParticleExamples.m", 
             "language": "objc"
         }, 
         {
@@ -2595,6 +2673,10 @@
             "language": "c"
         }, 
         {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2MouseJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "libs/lua/src/lstrlib.c", 
             "header_paths": [], 
             "flags": [], 
@@ -2606,8 +2688,8 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Support/CCVertex.m", 
-            "language": "objc"
+            "source": "libs/cocos2d-iphone/external/kazmath/src/mat4.c", 
+            "language": "c"
         }, 
         {
             "source": "libs/lua/src/lobject.c", 
@@ -2617,11 +2699,8 @@
             "defines": {}
         }, 
         {
-            "source": "kobold2d/KKInputMouse.m", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "objc", 
-            "defines": {}
+            "source": "libs/SneakyInput/Classes/SneakyButton.m", 
+            "language": "objc"
         }, 
         {
             "source": "kobold2d/KKAppDelegate.m", 
@@ -2629,6 +2708,10 @@
             "flags": [], 
             "language": "objc", 
             "defines": {}
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Platforms/Mac/CCGLView.m", 
+            "language": "objc"
         }, 
         {
             "source": "kobold2d/JRSwizzle.m", 
@@ -2671,12 +2754,12 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCDirectorIOS.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/ccShaders.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCClippingNode.m", 
-            "language": "objc"
+            "source": "libs/cocos2d-iphone/external/kazmath/src/vec3.c", 
+            "language": "c"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCTransitionProgress.m", 
@@ -2755,7 +2838,19 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCGLProgram.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCTexture2D.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2CircleContact.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Collision/b2CollideEdge.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Support/ZipUtils.m", 
             "language": "objc"
         }, 
         {
@@ -2763,11 +2858,8 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/lua/src/lauxlib.c", 
-            "header_paths": [], 
-            "flags": [], 
-            "language": "c", 
-            "defines": {}
+            "source": "libs/Box2D/Box2D/Collision/b2CollideCircle.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/ccDeprecated.m", 
@@ -2779,6 +2871,18 @@
             "flags": [], 
             "language": "objc", 
             "defines": {}
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2Contact.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Collision/b2DynamicTree.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Platforms/Mac/CCDirectorMac.m", 
+            "language": "objc"
         }, 
         {
             "source": "libs/SneakyInput/Classes/SneakyJoystickSkinnedBase.m", 
@@ -2814,7 +2918,15 @@
             "defines": {}
         }, 
         {
+            "source": "libs/Box2D/Box2D/Collision/Shapes/b2PolygonShape.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/cocos2d/CCDirector.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone-extensions/Extensions/CCScrollLayer/CCScrollLayer.m", 
             "language": "objc"
         }, 
         {
@@ -2840,8 +2952,12 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Support/ZipUtils.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Collision/b2TimeOfImpact.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2GearJoint.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCActionTiledGrid.m", 
@@ -2855,8 +2971,12 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCParticleExamples.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Collision/Shapes/b2ChainShape.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCPhysicsDebugNode.m", 
@@ -2867,15 +2987,30 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/external/kazmath/src/mat4.c", 
-            "language": "c"
+            "source": "libs/Box2D/Box2D/Dynamics/b2Body.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/lua/src/lmathlib.c", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "c", 
+            "defines": {}
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCGrabber.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/ccShaders.m", 
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2FrictionJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCDirectorIOS.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/ccGLStateCache.m", 
             "language": "objc"
         }, 
         {
@@ -2883,16 +3018,20 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/Platforms/Mac/CCGLView.m", 
-            "language": "objc"
-        }, 
-        {
             "source": "libs/cocos2d-iphone/cocos2d/CCMenu.m", 
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCActionInstant.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCTMXTiledMap.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2RopeJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Common/b2Math.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "kobold2d/cocos2d-ext/CCRemoveFromParentAction.m", 
@@ -2907,6 +3046,18 @@
             "flags": [], 
             "language": "objc", 
             "defines": {}
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp", 
+            "language": "c++"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/CCTransitionPageTurn.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/external/kazmath/src/utility.c", 
+            "language": "c"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCRenderTexture.m", 
@@ -2931,6 +3082,10 @@
             "defines": {}
         }, 
         {
+            "source": "libs/Box2D/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "kobold2d/KKDeviceMotion.m", 
             "header_paths": [], 
             "flags": [], 
@@ -2944,6 +3099,17 @@
         {
             "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCTouchDispatcher.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/CCActionInstant.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/lua/src/lauxlib.c", 
+            "header_paths": [], 
+            "flags": [], 
+            "language": "c", 
+            "defines": {}
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCTileMapAtlas.m", 
@@ -2976,11 +3142,23 @@
             "language": "objc"
         }, 
         {
+            "source": "libs/cocos2d-iphone/cocos2d/Support/CCVertex.m", 
+            "language": "objc"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/cocos2d/Platforms/iOS/CCES2Renderer.m", 
             "language": "objc"
         }, 
         {
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2DistanceJoint.cpp", 
+            "language": "c++"
+        }, 
+        {
             "source": "libs/cocos2d-iphone/CocosDenshion/CDXPropertyModifierAction.m", 
+            "language": "objc"
+        }, 
+        {
+            "source": "libs/cocos2d-iphone/cocos2d/CCClippingNode.m", 
             "language": "objc"
         }, 
         {
@@ -3002,12 +3180,16 @@
             "defines": {}
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCNode.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2PulleyJoint.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/cocos2d/CCAtlasNode.m", 
             "language": "objc"
+        }, 
+        {
+            "source": "libs/Box2D/Box2D/Common/b2BlockAllocator.cpp", 
+            "language": "c++"
         }, 
         {
             "source": "libs/cocos2d-iphone/CocosDenshion/SimpleAudioEngine.m", 
@@ -3038,11 +3220,11 @@
             "language": "objc"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCTextureAtlas.m", 
-            "language": "objc"
+            "source": "libs/Box2D/Box2D/Dynamics/Joints/b2WheelJoint.cpp", 
+            "language": "c++"
         }, 
         {
-            "source": "libs/cocos2d-iphone/cocos2d/CCAction.m", 
+            "source": "libs/cocos2d-iphone/cocos2d/CCTextureAtlas.m", 
             "language": "objc"
         }
     ], 
@@ -3052,6 +3234,14 @@
         "-ffast-math", 
         "-fwritable-strings", 
         "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
         "-fno-asm", 
         "-fno-exceptions", 
         "-fno-rtti", 
@@ -3073,14 +3263,20 @@
             "flag": "-Wprotocol", 
             "type": "objc"
         }, 
-        "-Wno-empty-body"
+        "-Wno-empty-body", 
+        "-Wno-unused-variable"
     ], 
     "infoplists": [], 
     "deps": [
         "UIKit", 
+        "GameKit", 
         "iAd"
     ], 
+    "libs": [], 
+    "java_sourcepaths": [], 
+    "java_res_dirs": [], 
     "type": "static-lib", 
+    "java_libs": [], 
     "defines": {
         "RELEASE": 1, 
         "NDEBUG": 1, 

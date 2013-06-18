@@ -1,0 +1,2652 @@
+{
+    "xcode_project": "Kobold2D-Libraries.xcodeproj", 
+    "hmaps": {}, 
+    "sources": [
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/JRSwizzle.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKAcceleration.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKAdBanner.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKAppDelegate.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKAppStoreHelper.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKConfig.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKDeviceMotion.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKGameKitHelper.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKHitTest.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInput.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInputGesture.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInputKeyboard.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInputMotion.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInputMouse.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKInputTouch.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKKeyStates.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKLua.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKMain.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKPixelMaskSprite.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKRotationRate.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKScreenshot.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKStartupConfig.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKTouch.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/KKTouches.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCAlphaTestParticleSystemQuad.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCAlphaTestSprite.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCAlphaTestSpriteBatchNode.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCAnimationExtensions.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCDirectorExtensions.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCNodeExtensions.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCRemoveFromParentAction.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCSchedulerExtensions.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/cocos2d-ext/CCSpriteExtensions.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "kobold2d/kobold2d_version.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "objc", 
+            "header_paths": [], 
+            "source": "libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/NSMutableArray+WeakReferences.m", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/bitarray_c/bitarray.c", 
+            "flags": [
+                "-Wno-sign-compare"
+            ], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lapi.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lauxlib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lbaselib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lcode.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ldblib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ldebug.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ldo.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ldump.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lfunc.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lgc.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/linit.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/liolib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/llex.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lmathlib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lmem.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/loadlib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lobject.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lopcodes.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/loslib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lparser.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lstate.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lstring.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lstrlib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ltable.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ltablib.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/ltm.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lundump.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lvm.c", 
+            "flags": [], 
+            "defines": {}
+        }, 
+        {
+            "language": "c", 
+            "header_paths": [], 
+            "source": "libs/lua/src/lzio.c", 
+            "flags": [], 
+            "defines": {}
+        }
+    ], 
+    "infoplists": [], 
+    "defines": {
+        "RELEASE": 1, 
+        "NDEBUG": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 50000, 
+        "NO_LOG_MACROS": 1
+    }, 
+    "pchs": [
+        "./prefix/Prefix-iOS.pch"
+    ], 
+    "assets": [
+        {
+            "asset": "../../../../../var/folders/h9/lzq9r4x91txd83kcr4fp434r0000gn/T/tmpN9Z6vc/TARGET_BUILD_DIR/libkobold2d-ios.a", 
+            "target": "../../../../../../../../Users/Ashu/Kobold2D/Kobold2D-2.1.0/puzzle-game/normal"
+        }
+    ], 
+    "type": "static-lib", 
+    "header_paths": [
+        {
+            "type": "I", 
+            "header_path": "kobold2d-ios.hmap", 
+            "hmap": {
+                "kobold2d-ios/lapi.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lapi.h", 
+                    "key": "kobold2d-ios/lapi.h"
+                }, 
+                "cpSimpleMotor.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpSimpleMotor.h", 
+                    "key": "cpSimpleMotor.h"
+                }, 
+                "ccShader_PositionTextureColor_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColor_vert.h", 
+                    "key": "ccShader_PositionTextureColor_vert.h"
+                }, 
+                "b2PrismaticJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2PrismaticJoint.h", 
+                    "key": "b2PrismaticJoint.h"
+                }, 
+                "IOSVersion.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "IOSVersion.h", 
+                    "key": "IOSVersion.h"
+                }, 
+                "cpPulleyJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpExtras/", 
+                    "suffix": "cpPulleyJoint.h", 
+                    "key": "cpPulleyJoint.h"
+                }, 
+                "CDAudioManager.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CDAudioManager.h", 
+                    "key": "CDAudioManager.h"
+                }, 
+                "ccShader_PositionTexture_uColor_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_uColor_vert.h", 
+                    "key": "ccShader_PositionTexture_uColor_vert.h"
+                }, 
+                "CCAtlasNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAtlasNode.h", 
+                    "key": "CCAtlasNode.h"
+                }, 
+                "kobold2d-ios/lstring.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lstring.h", 
+                    "key": "kobold2d-ios/lstring.h"
+                }, 
+                "cpVect.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpVect.h", 
+                    "key": "cpVect.h"
+                }, 
+                "b2PulleyJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2PulleyJoint.h", 
+                    "key": "b2PulleyJoint.h"
+                }, 
+                "OpenALManager.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "OpenALManager.h", 
+                    "key": "OpenALManager.h"
+                }, 
+                "CCGrid.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCGrid.h", 
+                    "key": "CCGrid.h"
+                }, 
+                "uthash.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "uthash.h", 
+                    "key": "uthash.h"
+                }, 
+                "ray2.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "ray2.h", 
+                    "key": "ray2.h"
+                }, 
+                "b2WheelJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2WheelJoint.h", 
+                    "key": "b2WheelJoint.h"
+                }, 
+                "CCSpriteFrameCache.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrameCache.h", 
+                    "key": "CCSpriteFrameCache.h"
+                }, 
+                "ccShader_Position_uColor_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_Position_uColor_frag.h", 
+                    "key": "ccShader_Position_uColor_frag.h"
+                }, 
+                "CCArray.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCArray.h", 
+                    "key": "CCArray.h"
+                }, 
+                "CCTouchHandler.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCTouchHandler.h", 
+                    "key": "CCTouchHandler.h"
+                }, 
+                "cpRotaryLimitJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpRotaryLimitJoint.h", 
+                    "key": "cpRotaryLimitJoint.h"
+                }, 
+                "b2EdgeAndPolygonContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2EdgeAndPolygonContact.h", 
+                    "key": "b2EdgeAndPolygonContact.h"
+                }, 
+                "ccShader_PositionTextureColor_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColor_frag.h", 
+                    "key": "ccShader_PositionTextureColor_frag.h"
+                }, 
+                "SpaceManagerCocos2d.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "SpaceManagerCocos2d.h", 
+                    "key": "SpaceManagerCocos2d.h"
+                }, 
+                "SneakyButton.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyButton.h", 
+                    "key": "SneakyButton.h"
+                }, 
+                "CCMenuAdvanced.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced/", 
+                    "suffix": "CCMenuAdvanced.h", 
+                    "key": "CCMenuAdvanced.h"
+                }, 
+                "kobold2d-ios/kkLuaInitScript.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkLuaInitScript.h", 
+                    "key": "kobold2d-ios/kkLuaInitScript.h"
+                }, 
+                "WaxLibDummyClass.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "WaxLibDummyClass.h", 
+                    "key": "WaxLibDummyClass.h"
+                }, 
+                "kobold2d-ios/lobject.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lobject.h", 
+                    "key": "kobold2d-ios/lobject.h"
+                }, 
+                "CCSprite.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSprite.h", 
+                    "key": "CCSprite.h"
+                }, 
+                "ccMoreMacros.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "ccMoreMacros.h", 
+                    "key": "ccMoreMacros.h"
+                }, 
+                "kobold2d-ios/KKInputMouse.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputMouse.h", 
+                    "key": "kobold2d-ios/KKInputMouse.h"
+                }, 
+                "CDXMacOSXSupport.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CDXMacOSXSupport.h", 
+                    "key": "CDXMacOSXSupport.h"
+                }, 
+                "KKAppStoreHelper.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAppStoreHelper.h", 
+                    "key": "KKAppStoreHelper.h"
+                }, 
+                "CCRenderTexture.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCRenderTexture.h", 
+                    "key": "CCRenderTexture.h"
+                }, 
+                "lauxlib.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lauxlib.h", 
+                    "key": "lauxlib.h"
+                }, 
+                "ObjectALMacros.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "ObjectALMacros.h", 
+                    "key": "ObjectALMacros.h"
+                }, 
+                "b2Math.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2Math.h", 
+                    "key": "b2Math.h"
+                }, 
+                "CCActionTiledGrid.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTiledGrid.h", 
+                    "key": "CCActionTiledGrid.h"
+                }, 
+                "kobold2d-ios/ccMoreMacros.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "ccMoreMacros.h", 
+                    "key": "kobold2d-ios/ccMoreMacros.h"
+                }, 
+                "kobold2d-ios/CCNodeExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCNodeExtensions.h", 
+                    "key": "kobold2d-ios/CCNodeExtensions.h"
+                }, 
+                "KKScreenshot.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKScreenshot.h", 
+                    "key": "KKScreenshot.h"
+                }, 
+                "b2ContactSolver.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2ContactSolver.h", 
+                    "key": "b2ContactSolver.h"
+                }, 
+                "b2World.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2World.h", 
+                    "key": "b2World.h"
+                }, 
+                "KKAcceleration.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAcceleration.h", 
+                    "key": "KKAcceleration.h"
+                }, 
+                "lzio.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lzio.h", 
+                    "key": "lzio.h"
+                }, 
+                "plane.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "plane.h", 
+                    "key": "plane.h"
+                }, 
+                "kobold2d-ios/kobold2d.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kobold2d.h", 
+                    "key": "kobold2d-ios/kobold2d.h"
+                }, 
+                "chipmunk_types.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_types.h", 
+                    "key": "chipmunk_types.h"
+                }, 
+                "KKInput.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInput.h", 
+                    "key": "KKInput.h"
+                }, 
+                "kobold2d-ios/KKAcceleration.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAcceleration.h", 
+                    "key": "kobold2d-ios/KKAcceleration.h"
+                }, 
+                "kobold2d-ios/KKDeviceMotion.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKDeviceMotion.h", 
+                    "key": "kobold2d-ios/KKDeviceMotion.h"
+                }, 
+                "cpCCNodeImpl.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "cpCCNodeImpl.h", 
+                    "key": "cpCCNodeImpl.h"
+                }, 
+                "kobold2d-ios/ltm.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ltm.h", 
+                    "key": "kobold2d-ios/ltm.h"
+                }, 
+                "ZipUtils.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ZipUtils.h", 
+                    "key": "ZipUtils.h"
+                }, 
+                "SpaceManager.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/", 
+                    "suffix": "SpaceManager.h", 
+                    "key": "SpaceManager.h"
+                }, 
+                "CCProfiling.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCProfiling.h", 
+                    "key": "CCProfiling.h"
+                }, 
+                "CCActionCatmullRom.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCatmullRom.h", 
+                    "key": "CCActionCatmullRom.h"
+                }, 
+                "cpGrooveJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpGrooveJoint.h", 
+                    "key": "cpGrooveJoint.h"
+                }, 
+                "CCFileUtils.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCFileUtils.h", 
+                    "key": "CCFileUtils.h"
+                }, 
+                "kobold2d-ios/CCAnimationExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAnimationExtensions.h", 
+                    "key": "kobold2d-ios/CCAnimationExtensions.h"
+                }, 
+                "mat4.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "mat4.h", 
+                    "key": "mat4.h"
+                }, 
+                "OALNotifications.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "OALNotifications.h", 
+                    "key": "OALNotifications.h"
+                }, 
+                "kobold2d-ios/CCSpriteExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCSpriteExtensions.h", 
+                    "key": "kobold2d-ios/CCSpriteExtensions.h"
+                }, 
+                "cencode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/TMXGenerator/", 
+                    "suffix": "cencode.h", 
+                    "key": "cencode.h"
+                }, 
+                "cocos2d-extensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "cocos2d-extensions.h", 
+                    "key": "cocos2d-extensions.h"
+                }, 
+                "CCNodeExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCNodeExtensions.h", 
+                    "key": "CCNodeExtensions.h"
+                }, 
+                "kobold2d-ios/lvm.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lvm.h", 
+                    "key": "kobold2d-ios/lvm.h"
+                }, 
+                "ALBuffer.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALBuffer.h", 
+                    "key": "ALBuffer.h"
+                }, 
+                "SneakyButtonSkinnedBase.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyButtonSkinnedBase.h", 
+                    "key": "SneakyButtonSkinnedBase.h"
+                }, 
+                "ccTypes.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccTypes.h", 
+                    "key": "ccTypes.h"
+                }, 
+                "lstring.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lstring.h", 
+                    "key": "lstring.h"
+                }, 
+                "CCDrawingPrimitives.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawingPrimitives.h", 
+                    "key": "CCDrawingPrimitives.h"
+                }, 
+                "ccShader_Position_uColor_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_Position_uColor_vert.h", 
+                    "key": "ccShader_Position_uColor_vert.h"
+                }, 
+                "b2DistanceJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2DistanceJoint.h", 
+                    "key": "b2DistanceJoint.h"
+                }, 
+                "cpSpatialIndex.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpSpatialIndex.h", 
+                    "key": "cpSpatialIndex.h"
+                }, 
+                "ObjectAL.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/", 
+                    "suffix": "ObjectAL.h", 
+                    "key": "ObjectAL.h"
+                }, 
+                "CCAlphaTestSpriteBatchNode.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestSpriteBatchNode.h", 
+                    "key": "CCAlphaTestSpriteBatchNode.h"
+                }, 
+                "CCScheduler.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScheduler.h", 
+                    "key": "CCScheduler.h"
+                }, 
+                "ccShader_PositionTextureColorAlphaTest_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureColorAlphaTest_frag.h", 
+                    "key": "ccShader_PositionTextureColorAlphaTest_frag.h"
+                }, 
+                "util.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "util.h", 
+                    "key": "util.h"
+                }, 
+                "CCParticleBatchNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleBatchNode.h", 
+                    "key": "CCParticleBatchNode.h"
+                }, 
+                "ccShader_PositionTexture_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_frag.h", 
+                    "key": "ccShader_PositionTexture_frag.h"
+                }, 
+                "CCGLView.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCGLView.h", 
+                    "key": "CCGLView.h"
+                }, 
+                "OALAudioSession.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Session/", 
+                    "suffix": "OALAudioSession.h", 
+                    "key": "OALAudioSession.h"
+                }, 
+                "vec2.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "vec2.h", 
+                    "key": "vec2.h"
+                }, 
+                "ccMacros.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccMacros.h", 
+                    "key": "ccMacros.h"
+                }, 
+                "FilesDownloader.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/", 
+                    "suffix": "FilesDownloader.h", 
+                    "key": "FilesDownloader.h"
+                }, 
+                "CCLabelAtlas.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelAtlas.h", 
+                    "key": "CCLabelAtlas.h"
+                }, 
+                "KKAdBanner.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAdBanner.h", 
+                    "key": "KKAdBanner.h"
+                }, 
+                "b2ContactManager.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2ContactManager.h", 
+                    "key": "b2ContactManager.h"
+                }, 
+                "cpBody.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpBody.h", 
+                    "key": "cpBody.h"
+                }, 
+                "b2CircleContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2CircleContact.h", 
+                    "key": "b2CircleContact.h"
+                }, 
+                "kobold2d-ios/KKInputMotion.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputMotion.h", 
+                    "key": "kobold2d-ios/KKInputMotion.h"
+                }, 
+                "ccShader_PositionColorLengthTexture_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionColorLengthTexture_vert.h", 
+                    "key": "ccShader_PositionColorLengthTexture_vert.h"
+                }, 
+                "b2PolygonAndCircleContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2PolygonAndCircleContact.h", 
+                    "key": "b2PolygonAndCircleContact.h"
+                }, 
+                "ALCaptureDevice.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALCaptureDevice.h", 
+                    "key": "ALCaptureDevice.h"
+                }, 
+                "kobold2d-ios/CCRemoveFromParentAction.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCRemoveFromParentAction.h", 
+                    "key": "kobold2d-ios/CCRemoveFromParentAction.h"
+                }, 
+                "CCWindow.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCWindow.h", 
+                    "key": "CCWindow.h"
+                }, 
+                "kobold2d-ios/cocos2d-extensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "cocos2d-extensions.h", 
+                    "key": "kobold2d-ios/cocos2d-extensions.h"
+                }, 
+                "CCProgressTimer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProgressTimer.h", 
+                    "key": "CCProgressTimer.h"
+                }, 
+                "CCNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode.h", 
+                    "key": "CCNode.h"
+                }, 
+                "kobold2d-ios/KKInput.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInput.h", 
+                    "key": "kobold2d-ios/KKInput.h"
+                }, 
+                "b2StackAllocator.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2StackAllocator.h", 
+                    "key": "b2StackAllocator.h"
+                }, 
+                "CCDirector.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDirector.h", 
+                    "key": "CCDirector.h"
+                }, 
+                "llimits.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "llimits.h", 
+                    "key": "llimits.h"
+                }, 
+                "CCCamera.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCCamera.h", 
+                    "key": "CCCamera.h"
+                }, 
+                "kobold2d-ios/kkMacros.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkMacros.h", 
+                    "key": "kobold2d-ios/kkMacros.h"
+                }, 
+                "CCTextureCache.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureCache.h", 
+                    "key": "CCTextureCache.h"
+                }, 
+                "NSThread+performBlock.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "NSThread+performBlock.h", 
+                    "key": "NSThread+performBlock.h"
+                }, 
+                "KKLua.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKLua.h", 
+                    "key": "KKLua.h"
+                }, 
+                "kobold2d-ios/KKInputTouch.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputTouch.h", 
+                    "key": "kobold2d-ios/KKInputTouch.h"
+                }, 
+                "CCTMXTiledMap.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXTiledMap.h", 
+                    "key": "CCTMXTiledMap.h"
+                }, 
+                "CCTouchDelegateProtocol.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCTouchDelegateProtocol.h", 
+                    "key": "CCTouchDelegateProtocol.h"
+                }, 
+                "KKMain.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKMain.h", 
+                    "key": "KKMain.h"
+                }, 
+                "kobold2d-ios/lopcodes.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lopcodes.h", 
+                    "key": "kobold2d-ios/lopcodes.h"
+                }, 
+                "OALAudioTrack.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrack.h", 
+                    "key": "OALAudioTrack.h"
+                }, 
+                "kobold2d-ios/lgc.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lgc.h", 
+                    "key": "kobold2d-ios/lgc.h"
+                }, 
+                "kobold2d-ios/CCAlphaTestSprite.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestSprite.h", 
+                    "key": "kobold2d-ios/CCAlphaTestSprite.h"
+                }, 
+                "CCActionProgressTimer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionProgressTimer.h", 
+                    "key": "CCActionProgressTimer.h"
+                }, 
+                "ccCArray.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccCArray.h", 
+                    "key": "ccCArray.h"
+                }, 
+                "CCAnimationCache.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimationCache.h", 
+                    "key": "CCAnimationCache.h"
+                }, 
+                "ccFPSImages.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccFPSImages.h", 
+                    "key": "ccFPSImages.h"
+                }, 
+                "kobold2d-ios/KKHitTest.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKHitTest.h", 
+                    "key": "kobold2d-ios/KKHitTest.h"
+                }, 
+                "lua.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lua.h", 
+                    "key": "lua.h"
+                }, 
+                "CCDirectorExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCDirectorExtensions.h", 
+                    "key": "CCDirectorExtensions.h"
+                }, 
+                "kobold2d-ios/KKRotationRate.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKRotationRate.h", 
+                    "key": "kobold2d-ios/KKRotationRate.h"
+                }, 
+                "KKInputMouse.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputMouse.h", 
+                    "key": "KKInputMouse.h"
+                }, 
+                "luaconf.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "luaconf.h", 
+                    "key": "luaconf.h"
+                }, 
+                "CCGrabber.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCGrabber.h", 
+                    "key": "CCGrabber.h"
+                }, 
+                "kobold2d-ios/CCAlphaTestParticleSystemQuad.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestParticleSystemQuad.h", 
+                    "key": "kobold2d-ios/CCAlphaTestParticleSystemQuad.h"
+                }, 
+                "OALSimpleAudio.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/", 
+                    "suffix": "OALSimpleAudio.h", 
+                    "key": "OALSimpleAudio.h"
+                }, 
+                "kobold2d-ios/CCSchedulerExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCSchedulerExtensions.h", 
+                    "key": "kobold2d-ios/CCSchedulerExtensions.h"
+                }, 
+                "ALChannelSource.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALChannelSource.h", 
+                    "key": "ALChannelSource.h"
+                }, 
+                "CCVideoPlayerImplMac.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/Mac/", 
+                    "suffix": "CCVideoPlayerImplMac.h", 
+                    "key": "CCVideoPlayerImplMac.h"
+                }, 
+                "ldo.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ldo.h", 
+                    "key": "ldo.h"
+                }, 
+                "chipmunk_ffi.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_ffi.h", 
+                    "key": "chipmunk_ffi.h"
+                }, 
+                "cpShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpShape.h", 
+                    "key": "cpShape.h"
+                }, 
+                "KKApplicationMac.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKApplicationMac.h", 
+                    "key": "KKApplicationMac.h"
+                }, 
+                "b2Joint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2Joint.h", 
+                    "key": "b2Joint.h"
+                }, 
+                "OALUtilityActions.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions/", 
+                    "suffix": "OALUtilityActions.h", 
+                    "key": "OALUtilityActions.h"
+                }, 
+                "KKInputGesture.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputGesture.h", 
+                    "key": "KKInputGesture.h"
+                }, 
+                "kobold2d-ios/KKAdBanner.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAdBanner.h", 
+                    "key": "kobold2d-ios/KKAdBanner.h"
+                }, 
+                "CCMenuItemSpriteIndependent.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCMenuItemSpriteIndependent/", 
+                    "suffix": "CCMenuItemSpriteIndependent.h", 
+                    "key": "CCMenuItemSpriteIndependent.h"
+                }, 
+                "OALAudioActions.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions/", 
+                    "suffix": "OALAudioActions.h", 
+                    "key": "OALAudioActions.h"
+                }, 
+                "kobold2d-ios/lundump.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lundump.h", 
+                    "key": "kobold2d-ios/lundump.h"
+                }, 
+                "KKStartupConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKStartupConfig.h", 
+                    "key": "KKStartupConfig.h"
+                }, 
+                "ccGLStateCache.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccGLStateCache.h", 
+                    "key": "ccGLStateCache.h"
+                }, 
+                "ldebug.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ldebug.h", 
+                    "key": "ldebug.h"
+                }, 
+                "b2Body.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2Body.h", 
+                    "key": "b2Body.h"
+                }, 
+                "KKKeyStates.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKKeyStates.h", 
+                    "key": "KKKeyStates.h"
+                }, 
+                "kobold2d-ios/lua.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lua.h", 
+                    "key": "kobold2d-ios/lua.h"
+                }, 
+                "vec4.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "vec4.h", 
+                    "key": "vec4.h"
+                }, 
+                "CCActionGrid3D.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionGrid3D.h", 
+                    "key": "CCActionGrid3D.h"
+                }, 
+                "kobold2d-ios/CCDirectorExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCDirectorExtensions.h", 
+                    "key": "kobold2d-ios/CCDirectorExtensions.h"
+                }, 
+                "OALAudioFile.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "OALAudioFile.h", 
+                    "key": "OALAudioFile.h"
+                }, 
+                "utlist.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "utlist.h", 
+                    "key": "utlist.h"
+                }, 
+                "cpSpaceSerializer.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpSpaceSerializer/", 
+                    "suffix": "cpSpaceSerializer.h", 
+                    "key": "cpSpaceSerializer.h"
+                }, 
+                "b2Contact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2Contact.h", 
+                    "key": "b2Contact.h"
+                }, 
+                "MyMovieView.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/Mac/", 
+                    "suffix": "MyMovieView.h", 
+                    "key": "MyMovieView.h"
+                }, 
+                "SimpleAudioEngine.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "SimpleAudioEngine.h", 
+                    "key": "SimpleAudioEngine.h"
+                }, 
+                "ccShader_PositionColorLengthTexture_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionColorLengthTexture_frag.h", 
+                    "key": "ccShader_PositionColorLengthTexture_frag.h"
+                }, 
+                "kobold2d-ios/kkTypes.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkTypes.h", 
+                    "key": "kobold2d-ios/kkTypes.h"
+                }, 
+                "CCTextureAtlas.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTextureAtlas.h", 
+                    "key": "CCTextureAtlas.h"
+                }, 
+                "TMXGenerator.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/TMXGenerator/", 
+                    "suffix": "TMXGenerator.h", 
+                    "key": "TMXGenerator.h"
+                }, 
+                "kobold2d-ios/ltable.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ltable.h", 
+                    "key": "kobold2d-ios/ltable.h"
+                }, 
+                "kobold2d-ios/luaconf.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "luaconf.h", 
+                    "key": "kobold2d-ios/luaconf.h"
+                }, 
+                "kobold2d-ios/lauxlib.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lauxlib.h", 
+                    "key": "kobold2d-ios/lauxlib.h"
+                }, 
+                "CCClippingNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCClippingNode.h", 
+                    "key": "CCClippingNode.h"
+                }, 
+                "CCVideoPlayer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/", 
+                    "suffix": "CCVideoPlayer.h", 
+                    "key": "CCVideoPlayer.h"
+                }, 
+                "b2GearJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2GearJoint.h", 
+                    "key": "b2GearJoint.h"
+                }, 
+                "ltable.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ltable.h", 
+                    "key": "ltable.h"
+                }, 
+                "CCActionInterval.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInterval.h", 
+                    "key": "CCActionInterval.h"
+                }, 
+                "luawax.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "luawax.h", 
+                    "key": "luawax.h"
+                }, 
+                "OALAudioTracks.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTracks.h", 
+                    "key": "OALAudioTracks.h"
+                }, 
+                "b2Timer.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2Timer.h", 
+                    "key": "b2Timer.h"
+                }, 
+                "kobold2d-ios/lcode.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lcode.h", 
+                    "key": "kobold2d-ios/lcode.h"
+                }, 
+                "lstate.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lstate.h", 
+                    "key": "lstate.h"
+                }, 
+                "KKInputTouch.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputTouch.h", 
+                    "key": "KKInputTouch.h"
+                }, 
+                "cpDampedSpring.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpDampedSpring.h", 
+                    "key": "cpDampedSpring.h"
+                }, 
+                "b2Collision.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/", 
+                    "suffix": "b2Collision.h", 
+                    "key": "b2Collision.h"
+                }, 
+                "matrix.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/GL/", 
+                    "suffix": "matrix.h", 
+                    "key": "matrix.h"
+                }, 
+                "CCAnimationExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAnimationExtensions.h", 
+                    "key": "CCAnimationExtensions.h"
+                }, 
+                "b2ChainAndPolygonContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2ChainAndPolygonContact.h", 
+                    "key": "b2ChainAndPolygonContact.h"
+                }, 
+                "SneakyJoystick.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyJoystick.h", 
+                    "key": "SneakyJoystick.h"
+                }, 
+                "kobold2d-ios/ldebug.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ldebug.h", 
+                    "key": "kobold2d-ios/ldebug.h"
+                }, 
+                "kobold2d-ios/lzio.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lzio.h", 
+                    "key": "kobold2d-ios/lzio.h"
+                }, 
+                "CCActionCamera.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionCamera.h", 
+                    "key": "CCActionCamera.h"
+                }, 
+                "cpConstraint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpConstraint.h", 
+                    "key": "cpConstraint.h"
+                }, 
+                "ALTypes.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALTypes.h", 
+                    "key": "ALTypes.h"
+                }, 
+                "prime.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/src/", 
+                    "suffix": "prime.h", 
+                    "key": "prime.h"
+                }, 
+                "CCShaderCache.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCShaderCache.h", 
+                    "key": "CCShaderCache.h"
+                }, 
+                "kobold2d-ios/VTPG_Common.h": {
+                    "prefix": "../__Kobold2D__/libs/VTPG/", 
+                    "suffix": "VTPG_Common.h", 
+                    "key": "kobold2d-ios/VTPG_Common.h"
+                }, 
+                "CCTileMapAtlas.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTileMapAtlas.h", 
+                    "key": "CCTileMapAtlas.h"
+                }, 
+                "SynthesizeSingleton.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "SynthesizeSingleton.h", 
+                    "key": "SynthesizeSingleton.h"
+                }, 
+                "CCSpriteFrame.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteFrame.h", 
+                    "key": "CCSpriteFrame.h"
+                }, 
+                "kobold2d-ios/KKAppDelegate.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAppDelegate.h", 
+                    "key": "kobold2d-ios/KKAppDelegate.h"
+                }, 
+                "lmem.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lmem.h", 
+                    "key": "lmem.h"
+                }, 
+                "CCSendMessages.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCSendMessages/", 
+                    "suffix": "CCSendMessages.h", 
+                    "key": "CCSendMessages.h"
+                }, 
+                "bitarray.h": {
+                    "prefix": "../__Kobold2D__/libs/bitarray_c/", 
+                    "suffix": "bitarray.h", 
+                    "key": "bitarray.h"
+                }, 
+                "kobold2d-ios/KKMain.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKMain.h", 
+                    "key": "kobold2d-ios/KKMain.h"
+                }, 
+                "CCScrollLayer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCScrollLayer/", 
+                    "suffix": "CCScrollLayer.h", 
+                    "key": "CCScrollLayer.h"
+                }, 
+                "b2TimeStep.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2TimeStep.h", 
+                    "key": "b2TimeStep.h"
+                }, 
+                "SneakyJoystickSkinnedJoystickExample.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyJoystickSkinnedJoystickExample.h", 
+                    "key": "SneakyJoystickSkinnedJoystickExample.h"
+                }, 
+                "b2BroadPhase.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/", 
+                    "suffix": "b2BroadPhase.h", 
+                    "key": "b2BroadPhase.h"
+                }, 
+                "b2Shape.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes/", 
+                    "suffix": "b2Shape.h", 
+                    "key": "b2Shape.h"
+                }, 
+                "kobold2d.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kobold2d.h", 
+                    "key": "kobold2d.h"
+                }, 
+                "b2ChainAndCircleContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2ChainAndCircleContact.h", 
+                    "key": "b2ChainAndCircleContact.h"
+                }, 
+                "cpDampedRotarySpring.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpDampedRotarySpring.h", 
+                    "key": "cpDampedRotarySpring.h"
+                }, 
+                "kobold2d-ios/KKInputKeyboard.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputKeyboard.h", 
+                    "key": "kobold2d-ios/KKInputKeyboard.h"
+                }, 
+                "CCLayerPanZoom.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCLayerPanZoom/", 
+                    "suffix": "CCLayerPanZoom.h", 
+                    "key": "CCLayerPanZoom.h"
+                }, 
+                "OALFunction.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions/", 
+                    "suffix": "OALFunction.h", 
+                    "key": "OALFunction.h"
+                }, 
+                "cpPinJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpPinJoint.h", 
+                    "key": "cpPinJoint.h"
+                }, 
+                "kobold2d-ios/KKInputEnums.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputEnums.h", 
+                    "key": "kobold2d-ios/KKInputEnums.h"
+                }, 
+                "KKConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKConfig.h", 
+                    "key": "KKConfig.h"
+                }, 
+                "chipmunk_private.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_private.h", 
+                    "key": "chipmunk_private.h"
+                }, 
+                "ccUtils.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "ccUtils.h", 
+                    "key": "ccUtils.h"
+                }, 
+                "mach_timing.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "mach_timing.h", 
+                    "key": "mach_timing.h"
+                }, 
+                "ObjectALConfig.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/", 
+                    "suffix": "ObjectALConfig.h", 
+                    "key": "ObjectALConfig.h"
+                }, 
+                "kobold2d-ios/KKTouches.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKTouches.h", 
+                    "key": "kobold2d-ios/KKTouches.h"
+                }, 
+                "kobold2d-ios/ccMoreTypes.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "ccMoreTypes.h", 
+                    "key": "kobold2d-ios/ccMoreTypes.h"
+                }, 
+                "OALTools.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "OALTools.h", 
+                    "key": "OALTools.h"
+                }, 
+                "kobold2d-ios/lualib.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lualib.h", 
+                    "key": "kobold2d-ios/lualib.h"
+                }, 
+                "ccShader_PositionTexture_uColor_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_uColor_frag.h", 
+                    "key": "ccShader_PositionTexture_uColor_frag.h"
+                }, 
+                "KKTouches.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKTouches.h", 
+                    "key": "KKTouches.h"
+                }, 
+                "LFCGzipUtility.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/TMXGenerator/", 
+                    "suffix": "LFCGzipUtility.h", 
+                    "key": "LFCGzipUtility.h"
+                }, 
+                "b2MouseJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2MouseJoint.h", 
+                    "key": "b2MouseJoint.h"
+                }, 
+                "CCActionPageTurn3D.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionPageTurn3D.h", 
+                    "key": "CCActionPageTurn3D.h"
+                }, 
+                "CCLayer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLayer.h", 
+                    "key": "CCLayer.h"
+                }, 
+                "CCES2Renderer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCES2Renderer.h", 
+                    "key": "CCES2Renderer.h"
+                }, 
+                "b2RevoluteJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2RevoluteJoint.h", 
+                    "key": "b2RevoluteJoint.h"
+                }, 
+                "kobold2d-ios/luawax.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "luawax.h", 
+                    "key": "kobold2d-ios/luawax.h"
+                }, 
+                "ccConfig.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccConfig.h", 
+                    "key": "ccConfig.h"
+                }, 
+                "SneakyJoystickSkinnedDPadExample.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyJoystickSkinnedDPadExample.h", 
+                    "key": "SneakyJoystickSkinnedDPadExample.h"
+                }, 
+                "cpSpace.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpSpace.h", 
+                    "key": "cpSpace.h"
+                }, 
+                "KKTouch.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKTouch.h", 
+                    "key": "KKTouch.h"
+                }, 
+                "b2Draw.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2Draw.h", 
+                    "key": "b2Draw.h"
+                }, 
+                "CCTransition.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransition.h", 
+                    "key": "CCTransition.h"
+                }, 
+                "CCLabelTTF.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelTTF.h", 
+                    "key": "CCLabelTTF.h"
+                }, 
+                "kobold2d-ios/KKLua.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKLua.h", 
+                    "key": "kobold2d-ios/KKLua.h"
+                }, 
+                "b2TimeOfImpact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/", 
+                    "suffix": "b2TimeOfImpact.h", 
+                    "key": "b2TimeOfImpact.h"
+                }, 
+                "CCMenu.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMenu.h", 
+                    "key": "CCMenu.h"
+                }, 
+                "CCActionTween.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionTween.h", 
+                    "key": "CCActionTween.h"
+                }, 
+                "lfunc.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lfunc.h", 
+                    "key": "lfunc.h"
+                }, 
+                "chipmunk.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk.h", 
+                    "key": "chipmunk.h"
+                }, 
+                "b2Rope.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Rope/", 
+                    "suffix": "b2Rope.h", 
+                    "key": "b2Rope.h"
+                }, 
+                "cpGearJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpGearJoint.h", 
+                    "key": "cpGearJoint.h"
+                }, 
+                "ccShader_PositionColor_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionColor_vert.h", 
+                    "key": "ccShader_PositionColor_vert.h"
+                }, 
+                "Box2D.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/", 
+                    "suffix": "Box2D.h", 
+                    "key": "Box2D.h"
+                }, 
+                "TransformUtils.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TransformUtils.h", 
+                    "key": "TransformUtils.h"
+                }, 
+                "cpCCSprite+PhysicsEditor.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/PhysicsEditorExtras/", 
+                    "suffix": "cpCCSprite+PhysicsEditor.h", 
+                    "key": "cpCCSprite+PhysicsEditor.h"
+                }, 
+                "CCParallaxNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParallaxNode.h", 
+                    "key": "CCParallaxNode.h"
+                }, 
+                "kazmath.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "kazmath.h", 
+                    "key": "kazmath.h"
+                }, 
+                "aabb.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "aabb.h", 
+                    "key": "aabb.h"
+                }, 
+                "NSMutableArray+WeakReferences.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h", 
+                    "key": "NSMutableArray+WeakReferences.h"
+                }, 
+                "kobold2d-ios/KKKeyStates.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKKeyStates.h", 
+                    "key": "kobold2d-ios/KKKeyStates.h"
+                }, 
+                "KKPixelMaskSprite.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKPixelMaskSprite.h", 
+                    "key": "KKPixelMaskSprite.h"
+                }, 
+                "CCDirectorMac.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCDirectorMac.h", 
+                    "key": "CCDirectorMac.h"
+                }, 
+                "kobold2d-ios/ldo.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ldo.h", 
+                    "key": "kobold2d-ios/ldo.h"
+                }, 
+                "CCSpriteExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCSpriteExtensions.h", 
+                    "key": "CCSpriteExtensions.h"
+                }, 
+                "TGAlib.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "TGAlib.h", 
+                    "key": "TGAlib.h"
+                }, 
+                "CCSchedulerExtensions.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCSchedulerExtensions.h", 
+                    "key": "CCSchedulerExtensions.h"
+                }, 
+                "CCAlphaTestParticleSystemQuad.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestParticleSystemQuad.h", 
+                    "key": "CCAlphaTestParticleSystemQuad.h"
+                }, 
+                "kobold2d-ios/lstate.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lstate.h", 
+                    "key": "kobold2d-ios/lstate.h"
+                }, 
+                "CCScene.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCScene.h", 
+                    "key": "CCScene.h"
+                }, 
+                "b2CircleShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes/", 
+                    "suffix": "b2CircleShape.h", 
+                    "key": "b2CircleShape.h"
+                }, 
+                "cpPolyShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpPolyShape.h", 
+                    "key": "cpPolyShape.h"
+                }, 
+                "OpenGL_Internal.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "OpenGL_Internal.h", 
+                    "key": "OpenGL_Internal.h"
+                }, 
+                "CCParticleSystem.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystem.h", 
+                    "key": "CCParticleSystem.h"
+                }, 
+                "KKRotationRate.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKRotationRate.h", 
+                    "key": "KKRotationRate.h"
+                }, 
+                "ccShaders.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShaders.h", 
+                    "key": "ccShaders.h"
+                }, 
+                "CGPointExtension.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CGPointExtension.h", 
+                    "key": "CGPointExtension.h"
+                }, 
+                "kobold2d-ios/KKConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKConfig.h", 
+                    "key": "kobold2d-ios/KKConfig.h"
+                }, 
+                "kobold2d-ios/lmem.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lmem.h", 
+                    "key": "kobold2d-ios/lmem.h"
+                }, 
+                "JRSwizzle.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "JRSwizzle.h", 
+                    "key": "JRSwizzle.h"
+                }, 
+                "lapi.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lapi.h", 
+                    "key": "lapi.h"
+                }, 
+                "OALAudioTrackNotifications.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/AudioTrack/", 
+                    "suffix": "OALAudioTrackNotifications.h", 
+                    "key": "OALAudioTrackNotifications.h"
+                }, 
+                "videoOverlayView.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/", 
+                    "suffix": "videoOverlayView.h", 
+                    "key": "videoOverlayView.h"
+                }, 
+                "CCBigImage.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCBigImage/", 
+                    "suffix": "CCBigImage.h", 
+                    "key": "CCBigImage.h"
+                }, 
+                "kobold2d-ios/KKScreenshot.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKScreenshot.h", 
+                    "key": "kobold2d-ios/KKScreenshot.h"
+                }, 
+                "Prefix.pch": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "Prefix.pch", 
+                    "key": "Prefix.pch"
+                }, 
+                "CCLabelBMFont.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCLabelBMFont.h", 
+                    "key": "CCLabelBMFont.h"
+                }, 
+                "quaternion.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "quaternion.h", 
+                    "key": "quaternion.h"
+                }, 
+                "kobold2d-ios/KKGameKitHelper.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKGameKitHelper.h", 
+                    "key": "kobold2d-ios/KKGameKitHelper.h"
+                }, 
+                "kobold2d-ios/KKAppStoreHelper.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAppStoreHelper.h", 
+                    "key": "kobold2d-ios/KKAppStoreHelper.h"
+                }, 
+                "b2DynamicTree.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/", 
+                    "suffix": "b2DynamicTree.h", 
+                    "key": "b2DynamicTree.h"
+                }, 
+                "CCMotionStreak.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMotionStreak.h", 
+                    "key": "CCMotionStreak.h"
+                }, 
+                "CCDrawNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCDrawNode.h", 
+                    "key": "CCDrawNode.h"
+                }, 
+                "Cocos3DDummyClass.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos3d/cocos3d/", 
+                    "suffix": "Cocos3DDummyClass.h", 
+                    "key": "Cocos3DDummyClass.h"
+                }, 
+                "kobold2d-ios/kkUserConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkUserConfig.h", 
+                    "key": "kobold2d-ios/kkUserConfig.h"
+                }, 
+                "cocos2d.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "cocos2d.h", 
+                    "key": "cocos2d.h"
+                }, 
+                "cpCCNode.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "cpCCNode.h", 
+                    "key": "cpCCNode.h"
+                }, 
+                "CCAction.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAction.h", 
+                    "key": "CCAction.h"
+                }, 
+                "CCSpriteBatchNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCSpriteBatchNode.h", 
+                    "key": "CCSpriteBatchNode.h"
+                }, 
+                "CCTMXObjectGroup.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXObjectGroup.h", 
+                    "key": "CCTMXObjectGroup.h"
+                }, 
+                "b2ChainShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes/", 
+                    "suffix": "b2ChainShape.h", 
+                    "key": "b2ChainShape.h"
+                }, 
+                "b2EdgeShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes/", 
+                    "suffix": "b2EdgeShape.h", 
+                    "key": "b2EdgeShape.h"
+                }, 
+                "CCSlider.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCSlider/", 
+                    "suffix": "CCSlider.h", 
+                    "key": "CCSlider.h"
+                }, 
+                "b2Settings.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2Settings.h", 
+                    "key": "b2Settings.h"
+                }, 
+                "ALSource.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALSource.h", 
+                    "key": "ALSource.h"
+                }, 
+                "CCNS.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCNS.h", 
+                    "key": "CCNS.h"
+                }, 
+                "b2Distance.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/", 
+                    "suffix": "b2Distance.h", 
+                    "key": "b2Distance.h"
+                }, 
+                "b2WeldJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2WeldJoint.h", 
+                    "key": "b2WeldJoint.h"
+                }, 
+                "CCAlphaTestSprite.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestSprite.h", 
+                    "key": "CCAlphaTestSprite.h"
+                }, 
+                "KKDeviceMotion.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKDeviceMotion.h", 
+                    "key": "KKDeviceMotion.h"
+                }, 
+                "base64.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "base64.h", 
+                    "key": "base64.h"
+                }, 
+                "ccDeprecated.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccDeprecated.h", 
+                    "key": "ccDeprecated.h"
+                }, 
+                "kobold2d-ios/llex.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "llex.h", 
+                    "key": "kobold2d-ios/llex.h"
+                }, 
+                "CCActionGrid.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionGrid.h", 
+                    "key": "CCActionGrid.h"
+                }, 
+                "lundump.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lundump.h", 
+                    "key": "lundump.h"
+                }, 
+                "cpArbiter.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpArbiter.h", 
+                    "key": "cpArbiter.h"
+                }, 
+                "kobold2d-ios/KKTouch.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKTouch.h", 
+                    "key": "kobold2d-ios/KKTouch.h"
+                }, 
+                "b2PolygonContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2PolygonContact.h", 
+                    "key": "b2PolygonContact.h"
+                }, 
+                "llex.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "llex.h", 
+                    "key": "llex.h"
+                }, 
+                "mat3.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "mat3.h", 
+                    "key": "mat3.h"
+                }, 
+                "CCRemoveFromParentAction.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCRemoveFromParentAction.h", 
+                    "key": "CCRemoveFromParentAction.h"
+                }, 
+                "b2Island.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2Island.h", 
+                    "key": "b2Island.h"
+                }, 
+                "kobold2d-ios/CCAlphaTestSpriteBatchNode.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "CCAlphaTestSpriteBatchNode.h", 
+                    "key": "kobold2d-ios/CCAlphaTestSpriteBatchNode.h"
+                }, 
+                "cpRatchetJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpRatchetJoint.h", 
+                    "key": "cpRatchetJoint.h"
+                }, 
+                "lparser.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lparser.h", 
+                    "key": "lparser.h"
+                }, 
+                "kobold2d-ios/KKInputGesture.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputGesture.h", 
+                    "key": "kobold2d-ios/KKInputGesture.h"
+                }, 
+                "KKAppDelegate.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKAppDelegate.h", 
+                    "key": "KKAppDelegate.h"
+                }, 
+                "CCTexturePVR.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexturePVR.h", 
+                    "key": "CCTexturePVR.h"
+                }, 
+                "b2GrowableStack.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2GrowableStack.h", 
+                    "key": "b2GrowableStack.h"
+                }, 
+                "CCPhysicsDebugNode.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsDebugNode.h", 
+                    "key": "CCPhysicsDebugNode.h"
+                }, 
+                "CocosDenshion.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CocosDenshion.h", 
+                    "key": "CocosDenshion.h"
+                }, 
+                "cpPivotJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpPivotJoint.h", 
+                    "key": "cpPivotJoint.h"
+                }, 
+                "kobold2d-ios/NSMutableArray+WeakReferences.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Support/", 
+                    "suffix": "NSMutableArray+WeakReferences.h", 
+                    "key": "kobold2d-ios/NSMutableArray+WeakReferences.h"
+                }, 
+                "lobject.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lobject.h", 
+                    "key": "lobject.h"
+                }, 
+                "KKInputEnums.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputEnums.h", 
+                    "key": "KKInputEnums.h"
+                }, 
+                "ColoredCircleSprite.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "ColoredCircleSprite.h", 
+                    "key": "ColoredCircleSprite.h"
+                }, 
+                "vec3.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "vec3.h", 
+                    "key": "vec3.h"
+                }, 
+                "ALDevice.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALDevice.h", 
+                    "key": "ALDevice.h"
+                }, 
+                "kobold2d-ios/JRSwizzle.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "JRSwizzle.h", 
+                    "key": "kobold2d-ios/JRSwizzle.h"
+                }, 
+                "lualib.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lualib.h", 
+                    "key": "lualib.h"
+                }, 
+                "ALWrapper.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALWrapper.h", 
+                    "key": "ALWrapper.h"
+                }, 
+                "kobold2d-ios/bitarray.h": {
+                    "prefix": "../__Kobold2D__/libs/bitarray_c/", 
+                    "suffix": "bitarray.h", 
+                    "key": "kobold2d-ios/bitarray.h"
+                }, 
+                "b2WorldCallbacks.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2WorldCallbacks.h", 
+                    "key": "b2WorldCallbacks.h"
+                }, 
+                "CCProtocols.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCProtocols.h", 
+                    "key": "CCProtocols.h"
+                }, 
+                "kobold2d-ios/kobold2d_version.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kobold2d_version.h", 
+                    "key": "kobold2d-ios/kobold2d_version.h"
+                }, 
+                "ccShader_PositionColor_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionColor_frag.h", 
+                    "key": "ccShader_PositionColor_frag.h"
+                }, 
+                "CCEventDispatcher.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/Mac/", 
+                    "suffix": "CCEventDispatcher.h", 
+                    "key": "CCEventDispatcher.h"
+                }, 
+                "CCTransitionProgress.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransitionProgress.h", 
+                    "key": "CCTransitionProgress.h"
+                }, 
+                "CDOpenALSupport.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CDOpenALSupport.h", 
+                    "key": "CDOpenALSupport.h"
+                }, 
+                "CCVideoPlayerImpliOS.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/", 
+                    "suffix": "CCVideoPlayerImpliOS.h", 
+                    "key": "CCVideoPlayerImpliOS.h"
+                }, 
+                "cpBB.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "cpBB.h", 
+                    "key": "cpBB.h"
+                }, 
+                "b2PolygonShape.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Collision/Shapes/", 
+                    "suffix": "b2PolygonShape.h", 
+                    "key": "b2PolygonShape.h"
+                }, 
+                "CCTextureCache+CCBigImageExtensions.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/CCBigImage/", 
+                    "suffix": "CCTextureCache+CCBigImageExtensions.h", 
+                    "key": "CCTextureCache+CCBigImageExtensions.h"
+                }, 
+                "ALSoundSource.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSource.h", 
+                    "key": "ALSoundSource.h"
+                }, 
+                "VTPG_Common.h": {
+                    "prefix": "../__Kobold2D__/libs/VTPG/", 
+                    "suffix": "VTPG_Common.h", 
+                    "key": "VTPG_Common.h"
+                }, 
+                "neon_matrix_impl.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "neon_matrix_impl.h", 
+                    "key": "neon_matrix_impl.h"
+                }, 
+                "cpCCSprite.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "cpCCSprite.h", 
+                    "key": "cpCCSprite.h"
+                }, 
+                "cpConstraintNode.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "cpConstraintNode.h", 
+                    "key": "cpConstraintNode.h"
+                }, 
+                "CDXPropertyModifierAction.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CDXPropertyModifierAction.h", 
+                    "key": "CDXPropertyModifierAction.h"
+                }, 
+                "chipmunk_unsafe.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/", 
+                    "suffix": "chipmunk_unsafe.h", 
+                    "key": "chipmunk_unsafe.h"
+                }, 
+                "kkUserConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkUserConfig.h", 
+                    "key": "kkUserConfig.h"
+                }, 
+                "SneakyJoystickSkinnedBase.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "SneakyJoystickSkinnedBase.h", 
+                    "key": "SneakyJoystickSkinnedBase.h"
+                }, 
+                "ColoredSquareSprite.h": {
+                    "prefix": "../__Kobold2D__/libs/SneakyInput/Classes/", 
+                    "suffix": "ColoredSquareSprite.h", 
+                    "key": "ColoredSquareSprite.h"
+                }, 
+                "lopcodes.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lopcodes.h", 
+                    "key": "lopcodes.h"
+                }, 
+                "kkLuaInitScript.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkLuaInitScript.h", 
+                    "key": "kkLuaInitScript.h"
+                }, 
+                "CCGL.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/", 
+                    "suffix": "CCGL.h", 
+                    "key": "CCGL.h"
+                }, 
+                "CCTouchDispatcher.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCTouchDispatcher.h", 
+                    "key": "CCTouchDispatcher.h"
+                }, 
+                "cpShapeNode.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/ccExtras/", 
+                    "suffix": "cpShapeNode.h", 
+                    "key": "cpShapeNode.h"
+                }, 
+                "ALListener.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALListener.h", 
+                    "key": "ALListener.h"
+                }, 
+                "cpSlideJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk/include/chipmunk/constraints/", 
+                    "suffix": "cpSlideJoint.h", 
+                    "key": "cpSlideJoint.h"
+                }, 
+                "KKInputKeyboard.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputKeyboard.h", 
+                    "key": "KKInputKeyboard.h"
+                }, 
+                "kkMacros.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkMacros.h", 
+                    "key": "kkMacros.h"
+                }, 
+                "SingleFileDownloader.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/", 
+                    "suffix": "SingleFileDownloader.h", 
+                    "key": "SingleFileDownloader.h"
+                }, 
+                "KKHitTest.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKHitTest.h", 
+                    "key": "KKHitTest.h"
+                }, 
+                "ltm.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "ltm.h", 
+                    "key": "ltm.h"
+                }, 
+                "b2Fixture.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/", 
+                    "suffix": "b2Fixture.h", 
+                    "key": "b2Fixture.h"
+                }, 
+                "CCParticleExamples.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleExamples.h", 
+                    "key": "CCParticleExamples.h"
+                }, 
+                "CCAnimation.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCAnimation.h", 
+                    "key": "CCAnimation.h"
+                }, 
+                "b2BlockAllocator.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Common/", 
+                    "suffix": "b2BlockAllocator.h", 
+                    "key": "b2BlockAllocator.h"
+                }, 
+                "CCActionEase.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionEase.h", 
+                    "key": "CCActionEase.h"
+                }, 
+                "CCVertex.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Support/", 
+                    "suffix": "CCVertex.h", 
+                    "key": "CCVertex.h"
+                }, 
+                "KKGameKitHelper.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKGameKitHelper.h", 
+                    "key": "KKGameKitHelper.h"
+                }, 
+                "kobold2d_version.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kobold2d_version.h", 
+                    "key": "kobold2d_version.h"
+                }, 
+                "OALSuspendHandler.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Session/", 
+                    "suffix": "OALSuspendHandler.h", 
+                    "key": "OALSuspendHandler.h"
+                }, 
+                "CCGLProgram.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCGLProgram.h", 
+                    "key": "CCGLProgram.h"
+                }, 
+                "CCActionManager.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionManager.h", 
+                    "key": "CCActionManager.h"
+                }, 
+                "lgc.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lgc.h", 
+                    "key": "lgc.h"
+                }, 
+                "OALActionManager.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions/", 
+                    "suffix": "OALActionManager.h", 
+                    "key": "OALActionManager.h"
+                }, 
+                "b2RopeJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2RopeJoint.h", 
+                    "key": "b2RopeJoint.h"
+                }, 
+                "tinystr.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpSpaceSerializer/tinyxml/", 
+                    "suffix": "tinystr.h", 
+                    "key": "tinystr.h"
+                }, 
+                "ALContext.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALContext.h", 
+                    "key": "ALContext.h"
+                }, 
+                "Prefix-iOS.pch": {
+                    "prefix": "../__Kobold2D__/prefix/", 
+                    "suffix": "Prefix-iOS.pch", 
+                    "key": "Prefix-iOS.pch"
+                }, 
+                "kkARCSupport.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkARCSupport.h", 
+                    "key": "kkARCSupport.h"
+                }, 
+                "CCPhysicsSprite.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCPhysicsSprite.h", 
+                    "key": "CCPhysicsSprite.h"
+                }, 
+                "CCTMXXMLParser.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXXMLParser.h", 
+                    "key": "CCTMXXMLParser.h"
+                }, 
+                "ccShader_PositionTextureA8Color_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureA8Color_vert.h", 
+                    "key": "ccShader_PositionTextureA8Color_vert.h"
+                }, 
+                "CDConfig.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/CocosDenshion/", 
+                    "suffix": "CDConfig.h", 
+                    "key": "CDConfig.h"
+                }, 
+                "CCDirectorIOS.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCDirectorIOS.h", 
+                    "key": "CCDirectorIOS.h"
+                }, 
+                "kobold2d-ios/KKPixelMaskSprite.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKPixelMaskSprite.h", 
+                    "key": "kobold2d-ios/KKPixelMaskSprite.h"
+                }, 
+                "lvm.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lvm.h", 
+                    "key": "lvm.h"
+                }, 
+                "mat4stack.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/GL/", 
+                    "suffix": "mat4stack.h", 
+                    "key": "mat4stack.h"
+                }, 
+                "ALSoundSourcePool.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/OpenAL/", 
+                    "suffix": "ALSoundSourcePool.h", 
+                    "key": "ALSoundSourcePool.h"
+                }, 
+                "kobold2d-ios/KKStartupConfig.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKStartupConfig.h", 
+                    "key": "kobold2d-ios/KKStartupConfig.h"
+                }, 
+                "CCTMXLayer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTMXLayer.h", 
+                    "key": "CCTMXLayer.h"
+                }, 
+                "b2FrictionJoint.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Joints/", 
+                    "suffix": "b2FrictionJoint.h", 
+                    "key": "b2FrictionJoint.h"
+                }, 
+                "Prefix-Mac.pch": {
+                    "prefix": "../__Kobold2D__/prefix/", 
+                    "suffix": "Prefix-Mac.pch", 
+                    "key": "Prefix-Mac.pch"
+                }, 
+                "CCActionInstant.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCActionInstant.h", 
+                    "key": "CCActionInstant.h"
+                }, 
+                "CCESRenderer.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/Platforms/iOS/", 
+                    "suffix": "CCESRenderer.h", 
+                    "key": "CCESRenderer.h"
+                }, 
+                "ccMoreTypes.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/cocos2d-ext/", 
+                    "suffix": "ccMoreTypes.h", 
+                    "key": "ccMoreTypes.h"
+                }, 
+                "CCTransitionPageTurn.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTransitionPageTurn.h", 
+                    "key": "CCTransitionPageTurn.h"
+                }, 
+                "kobold2d-ios/lparser.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lparser.h", 
+                    "key": "kobold2d-ios/lparser.h"
+                }, 
+                "CCParticleSystemQuad.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCParticleSystemQuad.h", 
+                    "key": "CCParticleSystemQuad.h"
+                }, 
+                "kobold2d-ios/llimits.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "llimits.h", 
+                    "key": "kobold2d-ios/llimits.h"
+                }, 
+                "ccShader_PositionTexture_vert.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTexture_vert.h", 
+                    "key": "ccShader_PositionTexture_vert.h"
+                }, 
+                "b2EdgeAndCircleContact.h": {
+                    "prefix": "../__Kobold2D__/libs/Box2D/Box2D/Dynamics/Contacts/", 
+                    "suffix": "b2EdgeAndCircleContact.h", 
+                    "key": "b2EdgeAndCircleContact.h"
+                }, 
+                "KKInputMotion.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "KKInputMotion.h", 
+                    "key": "KKInputMotion.h"
+                }, 
+                "OALAction.h": {
+                    "prefix": "../__Kobold2D__/libs/ObjectAL-for-iPhone/ObjectAL/ObjectAL/Actions/", 
+                    "suffix": "OALAction.h", 
+                    "key": "OALAction.h"
+                }, 
+                "CCTexture2D.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCTexture2D.h", 
+                    "key": "CCTexture2D.h"
+                }, 
+                "lcode.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lcode.h", 
+                    "key": "lcode.h"
+                }, 
+                "utility.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include/kazmath/", 
+                    "suffix": "utility.h", 
+                    "key": "utility.h"
+                }, 
+                "kobold2d-ios/lfunc.h": {
+                    "prefix": "../__Kobold2D__/libs/lua/src/", 
+                    "suffix": "lfunc.h", 
+                    "key": "kobold2d-ios/lfunc.h"
+                }, 
+                "kkTypes.h": {
+                    "prefix": "../__Kobold2D__/kobold2d/", 
+                    "suffix": "kkTypes.h", 
+                    "key": "kkTypes.h"
+                }, 
+                "CCConfiguration.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCConfiguration.h", 
+                    "key": "CCConfiguration.h"
+                }, 
+                "ccShader_PositionTextureA8Color_frag.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "ccShader_PositionTextureA8Color_frag.h", 
+                    "key": "ccShader_PositionTextureA8Color_frag.h"
+                }, 
+                "tinyxml.h": {
+                    "prefix": "../__Kobold2D__/libs/Chipmunk-SpaceManager/src/cpSpaceSerializer/tinyxml/", 
+                    "suffix": "tinyxml.h", 
+                    "key": "tinyxml.h"
+                }, 
+                "CCMenuItem.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCMenuItem.h", 
+                    "key": "CCMenuItem.h"
+                }, 
+                "CCNode+Debug.h": {
+                    "prefix": "../__Kobold2D__/libs/cocos2d-iphone/cocos2d/", 
+                    "suffix": "CCNode+Debug.h", 
+                    "key": "CCNode+Debug.h"
+                }
+            }
+        }, 
+        {
+            "type": "I", 
+            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/cocos2d"
+        }, 
+        {
+            "type": "I", 
+            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include"
+        }
+    ], 
+    "modules": [], 
+    "version": "1", 
+    "flags": [
+        "-DNS_BLOCK_ASSERTIONS=1", 
+        "-ffast-math", 
+        "-fwritable-strings", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fno-exceptions", 
+        "-fno-rtti", 
+        "-fpascal-strings", 
+        "-Werror", 
+        "-Wno-deprecated-declarations", 
+        "-Wmissing-field-initializers", 
+        "-Wreturn-type", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }
+    ], 
+    "deps": [
+        "UIKit"
+    ], 
+    "config": {}
+}
