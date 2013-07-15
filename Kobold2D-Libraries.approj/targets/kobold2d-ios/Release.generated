@@ -461,6 +461,7 @@
         }
     ], 
     "infoplists": [], 
+    "libs": [], 
     "defines": {
         "RELEASE": 1, 
         "NDEBUG": 1, 
@@ -472,7 +473,7 @@
     ], 
     "assets": [
         {
-            "asset": "../../../../../var/folders/h9/lzq9r4x91txd83kcr4fp434r0000gn/T/tmpN9Z6vc/TARGET_BUILD_DIR/libkobold2d-ios.a", 
+            "asset": "../../../../../var/folders/h9/lzq9r4x91txd83kcr4fp434r0000gn/T/tmpFd53PL/TARGET_BUILD_DIR/libkobold2d-ios.a", 
             "target": "../../../../../../../../Users/Ashu/Kobold2D/Kobold2D-2.1.0/puzzle-game/normal"
         }
     ], 
@@ -2601,11 +2602,11 @@
         }, 
         {
             "type": "I", 
-            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/cocos2d"
+            "header_path": "libs/cocos2d-iphone/cocos2d"
         }, 
         {
             "type": "I", 
-            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include"
+            "header_path": "libs/cocos2d-iphone/external/kazmath/include"
         }
     ], 
     "modules": [], 
@@ -2633,6 +2634,7 @@
         "-Wreturn-type", 
         "-Wswitch", 
         "-Wparentheses", 
+        "-Wsign-compare", 
         "-Wformat", 
         "-Wunused-value", 
         "-Wunused-variable", 
@@ -2642,6 +2644,10 @@
         }, 
         {
             "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
             "type": "objc"
         }
     ], 

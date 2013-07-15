@@ -2131,11 +2131,11 @@
             }
         }, 
         {
-            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/cocos2d", 
+            "header_path": "libs/cocos2d-iphone/cocos2d", 
             "type": "I"
         }, 
         {
-            "header_path": "/Users/Ashu/Kobold2D/Kobold2D-2.1.0/__Kobold2D__/libs/cocos2d-iphone/external/kazmath/include", 
+            "header_path": "libs/cocos2d-iphone/external/kazmath/include", 
             "type": "I"
         }, 
         "libs/Box2D"
@@ -3252,6 +3252,7 @@
         "-Wreturn-type", 
         "-Wswitch", 
         "-Wparentheses", 
+        "-Wsign-compare", 
         "-Wformat", 
         "-Wunused-value", 
         "-Wunused-variable", 
@@ -3263,8 +3264,14 @@
             "flag": "-Wprotocol", 
             "type": "objc"
         }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }, 
         "-Wno-empty-body", 
-        "-Wno-unused-variable"
+        "-Wno-unused-variable", 
+        "-Wno-sign-compare", 
+        "-Wno-enum-conversion"
     ], 
     "infoplists": [], 
     "deps": [

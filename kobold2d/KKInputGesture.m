@@ -331,7 +331,7 @@
 	{
 		gestureSwipeRecognizedThisFrame = YES;
 		gestureSwipeLocation = [director convertToGL:[recognizer locationInView:director.view]];
-		gestureSwipeDirection = [self convertSwipeDirection:[(UISwipeGestureRecognizer*)recognizer direction]];
+		gestureSwipeDirection = [(UISwipeGestureRecognizer*)recognizer direction];//Patch to fix gesture recognizer, old: [self convertSwipeDirection:[(UISwipeGestureRecognizer*)recognizer direction]];
 	}
 }
 

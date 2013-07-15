@@ -49,6 +49,42 @@
 
 @implementation KKNavigationController
 
+#ifdef APPORTABLE
+- (void)buttonUpWithEvent:(UIEvent *)event
+{
+	KKAppDelegate* appDelegate = (KKAppDelegate*)[UIApplication sharedApplication].delegate;
+	CCScene *runningScene = appDelegate.director.runningScene;
+	CCNode *layer = [runningScene getChildByTag:0];
+	SEL back = NSSelectorFromString(@"androidBack");
+	SEL menu = NSSelectorFromString(@"androidMenu");
+    switch (event.buttonCode)
+    {
+        case UIEventButtonCodeBack:
+            // handle back button if possible, otherwise exit(0)
+			if ([runningScene respondsToSelector:back])
+				[runningScene performSelector:back];
+			else if (layer && [layer respondsToSelector:back])
+				[layer performSelector:back];
+				
+            break;
+        case UIEventButtonCodeMenu:
+			// show menu if possible.
+			if ([runningScene respondsToSelector:menu])
+				[runningScene performSelector:menu];
+			else if (layer && [layer respondsToSelector:menu])
+				[layer performSelector:menu];
+            break;
+        default:
+            break;
+    }
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+#endif
+
 -(NSUInteger) supportedInterfaceOrientations
 {
 	KKAppDelegate* appDelegate = (KKAppDelegate*)[UIApplication sharedApplication].delegate;
@@ -95,7 +131,6 @@
 		[[KKInput sharedInput] resetInputStates];
 		
 		KKAppDelegate* appDelegate = (KKAppDelegate*)[UIApplication sharedApplication].delegate;
-		[appDelegate initializationComplete];
 		[appDelegate tryToRunFirstScene];
 	}
 	
@@ -344,6 +379,8 @@
 	[KKHitTest sharedHitTest].isHitTesting = config.enableGLViewNodeHitTesting;
 	
 	LOG_EXPR(director.winSize);
+	
+	[self initializationComplete];
 	
 	return YES;
 }

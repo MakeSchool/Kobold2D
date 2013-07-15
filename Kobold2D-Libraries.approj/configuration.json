@@ -128,7 +128,8 @@
     "flags": [
         "-Wno-empty-body",
         "-Wno-unused-variable",
-        "-Wno-sign-compare"
+        "-Wno-sign-compare",
+        "-Wno-enum-conversion"
     ],
     // A dictionary of global compiler definitions for the project.
     // Defines can be a simple key-value pair, e.g., "DEBUG": 1,

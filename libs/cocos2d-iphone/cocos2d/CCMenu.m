@@ -411,7 +411,7 @@ enum {
 		rowColumns = [(NSNumber *) [rows objectAtIndex:row] unsignedIntegerValue];
 		NSAssert( rowColumns, @"Can't have zero columns on a row");
 		
-		rowHeight = fmaxf(rowHeight, item.contentSize.height);
+		rowHeight = fmaxf(rowHeight, item.boundingBox.size.height);
 		++columnsOccupied;
 		
 		if(columnsOccupied >= rowColumns) {
@@ -435,7 +435,7 @@ enum {
 			x = w;
 		}
 		
-		CGSize itemSize = item.contentSize;
+		CGSize itemSize = item.boundingBox.size;
 		rowHeight = fmaxf(rowHeight, itemSize.height);
 		[item setPosition:ccp(x - winSize.width / 2,
 							  y - itemSize.height / 2)];

@@ -62,14 +62,6 @@
     // Leave it null for most cases.
     //"URL_SCHEME": null,
 
-    // ID for reporting crashdumps for your app.
-    // Supplied by Apportable.
-    //"CRASHDUMP_APP_ID": "",
-
-    // Secret key for encrypting and decrypting crashdumps
-    // for your app.  Supplied by Apportable.
-    //"CRASHDUMP_SECRET": "",
-
     // Key to receive remote notifications on the device.
     //"REMOTE_NOTIFICATION_KEY": "",
 
