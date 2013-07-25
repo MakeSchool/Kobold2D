@@ -54,7 +54,7 @@
 {
 	KKAppDelegate* appDelegate = (KKAppDelegate*)[UIApplication sharedApplication].delegate;
 	CCScene *runningScene = appDelegate.director.runningScene;
-	CCNode *layer = [runningScene getChildByTag:0];
+	CCNode *layer = [[runningScene children] objectAtIndex:0];
 	SEL back = NSSelectorFromString(@"androidBack");
 	SEL menu = NSSelectorFromString(@"androidMenu");
     switch (event.buttonCode)

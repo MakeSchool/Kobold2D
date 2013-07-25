@@ -473,8 +473,8 @@
     ], 
     "assets": [
         {
-            "asset": "../../../../../var/folders/h9/lzq9r4x91txd83kcr4fp434r0000gn/T/tmpFd53PL/TARGET_BUILD_DIR/libkobold2d-ios.a", 
-            "target": "../../../../../../../../Users/Ashu/Kobold2D/Kobold2D-2.1.0/puzzle-game/normal"
+            "asset": "../../../../../var/folders/h9/lzq9r4x91txd83kcr4fp434r0000gn/T/tmpTAXyRo/TARGET_BUILD_DIR/libkobold2d-ios.a", 
+            "target": "../../../../../../../../Users/Ashu/Kobold2D/Kobold2D-2.1.0/dsf/normal"
         }
     ], 
     "type": "static-lib", 
