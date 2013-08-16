@@ -97,6 +97,7 @@ typedef struct sCCParticle {
 	float		deltaRotation;
 
 	ccTime		timeToLive;
+    ccTime      timeSinceBirth;
 
 	NSUInteger	atlasIndex;
 

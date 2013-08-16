@@ -352,13 +352,20 @@
 	[super dealloc];
 }
 
--(void) initParticle: (tCCParticle*) particle
+-(void) initParticle: (tCCParticle*) particle atDeath: (BOOL)atDeath
 {
 	//CGPoint currentPosition = _position;
 	// timeToLive
 	// no negative life. prevent division by 0
-	particle->timeToLive = _life + _lifeVar * CCRANDOM_MINUS1_1();
-	particle->timeToLive = MAX(0, particle->timeToLive);
+    if (atDeath) {
+        particle->timeSinceBirth = _life + _lifeVar * CCRANDOM_MINUS1_1();
+        particle->timeSinceBirth = MAX(0, particle->timeSinceBirth);
+        particle->timeToLive = 0.0;
+    } else {
+        particle->timeToLive = _life + _lifeVar * CCRANDOM_MINUS1_1();
+        particle->timeToLive = MAX(0, particle->timeToLive);
+        particle->timeSinceBirth = 0.0;
+    }
 
 	// position
 	particle->pos.x = _sourcePosition.x + _posVar.x * CCRANDOM_MINUS1_1();
@@ -377,30 +384,49 @@
 	end.b = clampf( _endColor.b + _endColorVar.b * CCRANDOM_MINUS1_1(), 0, 1);
 	end.a = clampf( _endColor.a + _endColorVar.a * CCRANDOM_MINUS1_1(), 0, 1);
 
-	particle->color = start;
-	particle->deltaColor.r = (end.r - start.r) / particle->timeToLive;
-	particle->deltaColor.g = (end.g - start.g) / particle->timeToLive;
-	particle->deltaColor.b = (end.b - start.b) / particle->timeToLive;
-	particle->deltaColor.a = (end.a - start.a) / particle->timeToLive;
+	if (atDeath) {
+        particle->color = end;
+        particle->deltaColor.r = (end.r - start.r) / particle->timeSinceBirth;
+        particle->deltaColor.g = (end.g - start.g) / particle->timeSinceBirth;
+        particle->deltaColor.b = (end.b - start.b) / particle->timeSinceBirth;
+        particle->deltaColor.a = (end.a - start.a) / particle->timeSinceBirth;
+    } else {
+        particle->color = start;
+        particle->deltaColor.r = (end.r - start.r) / particle->timeToLive;
+        particle->deltaColor.g = (end.g - start.g) / particle->timeToLive;
+        particle->deltaColor.b = (end.b - start.b) / particle->timeToLive;
+        particle->deltaColor.a = (end.a - start.a) / particle->timeToLive;
+    }
 
 	// size
 	float startS = _startSize + _startSizeVar * CCRANDOM_MINUS1_1();
 	startS = MAX(0, startS); // No negative value
 
-	particle->size = startS;
 	if( _endSize == kCCParticleStartSizeEqualToEndSize )
 		particle->deltaSize = 0;
 	else {
 		float endS = _endSize + _endSizeVar * CCRANDOM_MINUS1_1();
 		endS = MAX(0, endS);	// No negative values
-		particle->deltaSize = (endS - startS) / particle->timeToLive;
+        if (atDeath) {
+            particle->deltaSize = (endS - startS) / particle->timeSinceBirth;
+            particle->size = endS;
+        } else {
+            particle->deltaSize = (endS - startS) / particle->timeToLive;
+            particle->size = startS;
+        }
 	}
 
 	// rotation
 	float startA = _startSpin + _startSpinVar * CCRANDOM_MINUS1_1();
 	float endA = _endSpin + _endSpinVar * CCRANDOM_MINUS1_1();
-	particle->rotation = startA;
-	particle->deltaRotation = (endA - startA) / particle->timeToLive;
+    
+    if (atDeath) {
+        particle->rotation = endA;
+        particle->deltaRotation = (endA - startA) / particle->timeSinceBirth;
+    } else {
+        particle->rotation = startA;
+        particle->deltaRotation = (endA - startA) / particle->timeToLive;
+    }
 
 	// position
 	if( _positionType == kCCPositionTypeFree )
@@ -439,22 +465,103 @@
 
 		if( _mode.B.endRadius == kCCParticleStartRadiusEqualToEndRadius )
 			particle->mode.B.deltaRadius = 0;
-		else
-			particle->mode.B.deltaRadius = (endRadius - startRadius) / particle->timeToLive;
+		else {
+			if (atDeath) {
+                particle->mode.B.deltaRadius = (endRadius - startRadius) / particle->timeSinceBirth;
+                particle->mode.B.radius = endRadius;
+            } else {
+                particle->mode.B.deltaRadius = (endRadius - startRadius) / particle->timeToLive;
+                particle->mode.B.radius = startRadius;
+            }
+        }
 
-		particle->mode.B.angle = a;
 		particle->mode.B.degreesPerSecond = CC_DEGREES_TO_RADIANS(_mode.B.rotatePerSecond + _mode.B.rotatePerSecondVar * CCRANDOM_MINUS1_1());
+        if (atDeath) {
+            particle->mode.B.angle = a + particle->timeSinceBirth * particle->mode.B.degreesPerSecond;
+        } else {
+            particle->mode.B.angle = a;
+        }
 	}
+    
+    if (atDeath)
+    {
+        // Mode A: gravity, direction, tangential accel & radial accel
+        if( _emitterMode == kCCParticleModeGravity ) {
+            CGPoint tmp, radial, tangential;
+            
+            ccTime dt = 1/60.0;
+            int count = particle->timeSinceBirth * 60;
+            
+            for (int i = 0; i <= count; i++)
+            {
+                radial = CGPointZero;
+                // radial acceleration
+                if(particle->pos.x || particle->pos.y)
+                    radial = ccpNormalize(particle->pos);
+                
+                tangential = radial;
+                radial = ccpMult(radial, particle->mode.A.radialAccel);
+                
+                // tangential acceleration
+                float newy = tangential.x;
+                tangential.x = -tangential.y;
+                tangential.y = newy;
+                tangential = ccpMult(tangential, particle->mode.A.tangentialAccel);
+                
+                // (gravity + radial + tangential) * dt
+                tmp = ccpAdd( ccpAdd( radial, tangential), _mode.A.gravity);
+                tmp = ccpMult( tmp, dt);
+                particle->mode.A.dir = ccpAdd( particle->mode.A.dir, tmp);
+                tmp = ccpMult(particle->mode.A.dir, dt);
+                particle->pos = ccpAdd( particle->pos, tmp );
+            }
+        }// Mode B: radius movement
+        else {
+            // Update the angle and radius of the particle.
+            particle->mode.B.angle += particle->mode.B.degreesPerSecond * particle->timeSinceBirth;
+            particle->mode.B.radius += particle->mode.B.deltaRadius * particle->timeSinceBirth;
+            
+            particle->pos.x = - cosf(particle->mode.B.angle) * particle->mode.B.radius;
+            particle->pos.y = - sinf(particle->mode.B.angle) * particle->mode.B.radius;
+        }
+        
+        CGPoint currentPosition = CGPointZero;
+        if( _positionType == kCCPositionTypeFree )
+            currentPosition = [self convertToWorldSpace:CGPointZero];
+        
+        else if( _positionType == kCCPositionTypeRelative )
+            currentPosition = _position;
+        
+        CGPoint newPos;
+        
+        if( _positionType == kCCPositionTypeFree || _positionType == kCCPositionTypeRelative )
+        {
+            CGPoint diff = ccpSub( currentPosition, particle->startPos );
+            newPos = ccpSub(particle->pos, diff);
+        } else
+            newPos = particle->pos;
+        
+        // translate newPos to correct position, since matrix transform isn't performed in batchnode
+        // don't update the particle with the new position information, it will interfere with the radius and tangential calculations
+        if (_batchNode)
+        {
+            newPos.x+=_position.x;
+            newPos.y+=_position.y;
+        }
+        
+        _updateParticleImp(self, _updateParticleSel, particle, newPos);
+        _particleIdx++;
+    }
 }
 
--(BOOL) addParticle
+-(BOOL) addParticleAtDeath:(BOOL)atDeath
 {
 	if( [self isFull] )
 		return NO;
 
 	tCCParticle * particle = &_particles[ _particleCount ];
 
-	[self initParticle: particle];
+	[self initParticle: particle atDeath:atDeath];
 	_particleCount++;
 
 	return YES;
@@ -488,22 +595,40 @@
 {
 	CC_PROFILER_START_CATEGORY(kCCProfilerCategoryParticles , @"CCParticleSystem - update");
 
+    BOOL reverse = (dt < 0);
+    
 	if( _active && _emissionRate ) {
-		float rate = 1.0f / _emissionRate;
+        if (!reverse) {
+            float rate = 1.0f / _emissionRate;
+            
+            //issue #1201, prevent bursts of particles, due to too high emitCounter
+            if (_particleCount < _totalParticles)
+                _emitCounter += dt;
+            
+            while( _particleCount < _totalParticles && _emitCounter > rate ) {
+                [self addParticleAtDeath:reverse];
+                _emitCounter -= rate;
+            }
+            
+            _elapsed += dt;
+            
+            if(_duration != -1 && _duration < _elapsed)
+                [self stopSystem];
+        } else {
+            float rate = 1.0f / _emissionRate;
+            
+            //issue #1201, prevent bursts of particles, due to too high emitCounter
+            if (_particleCount < _totalParticles)
+                _emitCounter += dt;
+            
+            while( _particleCount < _totalParticles && _emitCounter <= rate ) {
+                [self addParticleAtDeath:reverse];
+                _emitCounter += rate;
+            }
+            
+            _elapsed += dt;
+        }
 		
-		//issue #1201, prevent bursts of particles, due to too high emitCounter
-		if (_particleCount < _totalParticles)
-			_emitCounter += dt; 
-		
-		while( _particleCount < _totalParticles && _emitCounter > rate ) {
-			[self addParticle];
-			_emitCounter -= rate;
-		}
-
-		_elapsed += dt;
-
-		if(_duration != -1 && _duration < _elapsed)
-			[self stopSystem];
 	}
 
 	_particleIdx = 0;
@@ -523,8 +648,9 @@
 
 			// life
 			p->timeToLive -= dt;
+            p->timeSinceBirth += dt;
 
-			if( p->timeToLive > 0 ) {
+			if( p->timeToLive > 0  && p->timeSinceBirth > 0) {
 
 				// Mode A: gravity, direction, tangential accel & radial accel
 				if( _emitterMode == kCCParticleModeGravity ) {
