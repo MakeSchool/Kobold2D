@@ -129,7 +129,8 @@
         "-Wno-empty-body",
         "-Wno-unused-variable",
         "-Wno-sign-compare",
-        "-Wno-enum-conversion"
+        "-Wno-enum-conversion",
+        "-Wno-incompatible-pointer-types"
     ],
     // A dictionary of global compiler definitions for the project.
     // Defines can be a simple key-value pair, e.g., "DEBUG": 1,

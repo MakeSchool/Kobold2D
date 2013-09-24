@@ -3247,6 +3247,7 @@
         "-fno-rtti", 
         "-fpascal-strings", 
         "-Werror", 
+        "-w", 
         "-Wno-deprecated-declarations", 
         "-Wmissing-field-initializers", 
         "-Wreturn-type", 
@@ -3271,7 +3272,8 @@
         "-Wno-empty-body", 
         "-Wno-unused-variable", 
         "-Wno-sign-compare", 
-        "-Wno-enum-conversion"
+        "-Wno-enum-conversion", 
+        "-Wno-incompatible-pointer-types"
     ], 
     "infoplists": [], 
     "deps": [
