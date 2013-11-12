@@ -336,7 +336,6 @@
 	director.wantsFullScreenLayout = !config.enableStatusBar;
 	director.displayStats = config.displayFPS;
 	director.animationInterval = 1.0f / config.maxFrameRate;
-	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:director.animationInterval];
 	
 	// attach the OpenGLView
 	director.view = glView;

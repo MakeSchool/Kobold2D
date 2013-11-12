@@ -54,23 +54,12 @@ typedef enum {
  - It can receive Mouse events on Mac
 */
 #ifdef __CC_PLATFORM_IOS
-@interface CCLayer : CCNode <CCAccelerometerDelegate, CCTouchAllAtOnceDelegate, CCTouchOneByOneDelegate>
+@interface CCLayer : CCNode <CCTouchAllAtOnceDelegate, CCTouchOneByOneDelegate>
 {
 	BOOL _touchEnabled;
 	NSInteger _touchPriority;
 	BOOL _touchMode;
-	
-	BOOL _accelerometerEnabled;
 }
-
-/** whether or not it will receive Accelerometer events
- You can enable / disable accelerometer events with this property.
-
- Valid only on iOS. Not valid on Mac.
-
- @since v0.8.1
- */
-@property(nonatomic, assign, getter = isAccelerometerEnabled) BOOL accelerometerEnabled;
 
 /** whether or not it will receive Touch events
  @since v0.8.1
@@ -83,11 +72,6 @@ typedef enum {
 	- kCCTouchesOneByOne: Receives one touch at the time.
  */
 @property(nonatomic, assign) ccTouchesMode touchMode;
-
-/** sets the accelerometer's update frequency. A value of 1/2 means that the callback is going to be called twice per second.
- @since v2.1
- */
--(void) setAccelerometerInterval:(float)interval;
 
 
 #elif defined(__CC_PLATFORM_MAC)

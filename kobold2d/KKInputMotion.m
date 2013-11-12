@@ -22,11 +22,7 @@
 		// By leaving motionManager uninitialized KKInputMotion falls back to using UIAccelerometer.
 #if KK_PLATFORM_IOS_DEVICE
 		// check if the motion manager class is available (available since iOS 4.0)
-		Class motionManagerClass = NSClassFromString(@"CMMotionManager");
-		if (motionManagerClass)
-		{
-			motionManager = [[motionManagerClass alloc] init];
-		}
+		motionManager = [[CMMotionManager alloc] init];
 #endif
 		
 		deviceMotion = [[KKDeviceMotion alloc] init];
@@ -91,35 +87,18 @@
 	{
 		accelerometerActive = active;
 		
-		if (motionManager)
+		if (accelerometerActive)
 		{
-			if (accelerometerActive)
-			{
-				// make sure we don't read accelerometer values twice
-				[self setDeviceMotionActive:NO];
-
-				[motionManager startAccelerometerUpdates];
-				[self updateAcceleration];
-			}
-			else
-			{
-				[motionManager stopAccelerometerUpdates];
-				[deviceMotion.acceleration reset];
-			}
+			// make sure we don't read accelerometer values twice
+			[self setDeviceMotionActive:NO];
+			
+			[motionManager startAccelerometerUpdates];
+			[self updateAcceleration];
 		}
-		else // in Simulator or pre iOS 4.0 devices we use regular UIAcceleration events
+		else
 		{
-			UIAccelerometer* accelerometer = [UIAccelerometer sharedAccelerometer];
-			if (accelerometerActive)
-			{
-				accelerometer.delegate = self;
-				accelerometer.updateInterval = [CCDirector sharedDirector].animationInterval;
-			}
-			else
-			{
-				accelerometer.delegate = nil;
-				[deviceMotion.acceleration reset];
-			}
+			[motionManager stopAccelerometerUpdates];
+			[deviceMotion.acceleration reset];
 		}
 	}
 #else
@@ -129,11 +108,7 @@
 -(BOOL) accelerometerAvailable
 {
 #if KK_PLATFORM_IOS
-	if (motionManager)
-	{
-		return (BOOL)[motionManager isAccelerometerAvailable];
-	}
-	return YES; // emulated via UIAcceleration and iSimulate on Simulator
+	return (BOOL)[motionManager isAccelerometerAvailable];
 #else
 	return NO;
 #endif
@@ -165,7 +140,7 @@
 -(void) setGyroActive:(BOOL)active
 {
 #if KK_PLATFORM_IOS
-	if (motionManager && gyroActive != active)
+	if (gyroActive != active)
 	{
 		gyroActive = active;
 		if (gyroActive)

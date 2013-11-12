@@ -261,7 +261,7 @@
     
     if ( _status == kDownloadStatusSizeCheck )
     {
-        int newSize = [ [_sizeCheckers objectAtIndex: _curFile] contentLength ];
+        int newSize = [ (SingleFileDownloader*)[_sizeCheckers objectAtIndex: _curFile] contentLength ];
         [ _fileSizes replaceObjectAtIndex: _curFile withObject: [NSNumber numberWithInt: newSize ] ];
         
         MYLOG(@" size check mission accomplished - cancel");
@@ -285,7 +285,7 @@
     }
     else if (_status == kDownloadStatusDownload)
     {
-        int newSize = [ [_fileDownloaders objectAtIndex: _curFile] contentLength ];
+        int newSize = [ (SingleFileDownloader*)[_fileDownloaders objectAtIndex: _curFile] contentLength ];
         [ _fileSizes replaceObjectAtIndex: _curFile withObject: [NSNumber numberWithInt: newSize ] ];
     }
 }

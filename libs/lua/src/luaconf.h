@@ -11,6 +11,8 @@
 #include <limits.h>
 #include <stddef.h>
 
+// Force use of mkstemp (tmpnam is deprecated)
+#define LUA_USE_MKSTEMP
 
 /*
 ** ==================================================================

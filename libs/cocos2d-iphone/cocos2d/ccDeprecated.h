@@ -163,8 +163,6 @@ DEPRECATED_ATTRIBUTE @interface MacView : CCGLView
 #if __CC_PLATFORM_IOS
 // new: setTouchEnabled:
 -(void) setIsTouchEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
-// new: setAccelerometerEnabled:
--(void) setIsAccelerometerEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
 #elif __CC_PLATFORM_MAC
 -(void) setIsTouchEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
 -(void) setIsKeyboardEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;

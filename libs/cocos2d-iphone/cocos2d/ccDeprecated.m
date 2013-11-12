@@ -134,10 +134,6 @@ void ccGLUniformModelViewProjectionMatrix( CCGLProgram* program )
 {
 	[self setTouchEnabled:enabled];
 }
--(void) setIsAccelerometerEnabled:(BOOL)enabled
-{
-	[self setAccelerometerEnabled:enabled];
-}
 #elif __CC_PLATFORM_MAC
 -(void) setIsTouchEnabled:(BOOL)enabled
 {
