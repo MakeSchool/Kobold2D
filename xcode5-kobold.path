@@ -1,0 +1,312 @@
+diff --git a/kobold2d/KKAppDelegate.m b/kobold2d/KKAppDelegate.m
+index f341e7a..7a12f77 100755
+--- a/kobold2d/KKAppDelegate.m
++++ b/kobold2d/KKAppDelegate.m
+@@ -336,7 +336,6 @@
+ 	director.wantsFullScreenLayout = !config.enableStatusBar;
+ 	director.displayStats = config.displayFPS;
+ 	director.animationInterval = 1.0f / config.maxFrameRate;
+-	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:director.animationInterval];
+ 	
+ 	// attach the OpenGLView
+ 	director.view = glView;
+diff --git a/kobold2d/KKInputMotion.m b/kobold2d/KKInputMotion.m
+index a33e441..a5a214c 100644
+--- a/kobold2d/KKInputMotion.m
++++ b/kobold2d/KKInputMotion.m
+@@ -22,11 +22,7 @@
+ 		// By leaving motionManager uninitialized KKInputMotion falls back to using UIAccelerometer.
+ #if KK_PLATFORM_IOS_DEVICE
+ 		// check if the motion manager class is available (available since iOS 4.0)
+-		Class motionManagerClass = NSClassFromString(@"CMMotionManager");
+-		if (motionManagerClass)
+-		{
+-			motionManager = [[motionManagerClass alloc] init];
+-		}
++		motionManager = [[CMMotionManager alloc] init];
+ #endif
+ 		
+ 		deviceMotion = [[KKDeviceMotion alloc] init];
+@@ -91,35 +87,18 @@
+ 	{
+ 		accelerometerActive = active;
+ 		
+-		if (motionManager)
++		if (accelerometerActive)
+ 		{
+-			if (accelerometerActive)
+-			{
+-				// make sure we don't read accelerometer values twice
+-				[self setDeviceMotionActive:NO];
+-
+-				[motionManager startAccelerometerUpdates];
+-				[self updateAcceleration];
+-			}
+-			else
+-			{
+-				[motionManager stopAccelerometerUpdates];
+-				[deviceMotion.acceleration reset];
+-			}
++			// make sure we don't read accelerometer values twice
++			[self setDeviceMotionActive:NO];
++			
++			[motionManager startAccelerometerUpdates];
++			[self updateAcceleration];
+ 		}
+-		else // in Simulator or pre iOS 4.0 devices we use regular UIAcceleration events
++		else
+ 		{
+-			UIAccelerometer* accelerometer = [UIAccelerometer sharedAccelerometer];
+-			if (accelerometerActive)
+-			{
+-				accelerometer.delegate = self;
+-				accelerometer.updateInterval = [CCDirector sharedDirector].animationInterval;
+-			}
+-			else
+-			{
+-				accelerometer.delegate = nil;
+-				[deviceMotion.acceleration reset];
+-			}
++			[motionManager stopAccelerometerUpdates];
++			[deviceMotion.acceleration reset];
+ 		}
+ 	}
+ #else
+@@ -129,11 +108,7 @@
+ -(BOOL) accelerometerAvailable
+ {
+ #if KK_PLATFORM_IOS
+-	if (motionManager)
+-	{
+-		return (BOOL)[motionManager isAccelerometerAvailable];
+-	}
+-	return YES; // emulated via UIAcceleration and iSimulate on Simulator
++	return (BOOL)[motionManager isAccelerometerAvailable];
+ #else
+ 	return NO;
+ #endif
+@@ -165,7 +140,7 @@
+ -(void) setGyroActive:(BOOL)active
+ {
+ #if KK_PLATFORM_IOS
+-	if (motionManager && gyroActive != active)
++	if (gyroActive != active)
+ 	{
+ 		gyroActive = active;
+ 		if (gyroActive)
+diff --git a/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/FilesDownloader.m b/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/FilesDownloader.m
+index b56848e..acd3b8f 100644
+--- a/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/FilesDownloader.m
++++ b/libs/cocos2d-iphone-extensions/Extensions/FilesDownloader/FilesDownloader.m
+@@ -261,7 +261,7 @@
+     
+     if ( _status == kDownloadStatusSizeCheck )
+     {
+-        int newSize = [ [_sizeCheckers objectAtIndex: _curFile] contentLength ];
++        int newSize = [ (SingleFileDownloader*)[_sizeCheckers objectAtIndex: _curFile] contentLength ];
+         [ _fileSizes replaceObjectAtIndex: _curFile withObject: [NSNumber numberWithInt: newSize ] ];
+         
+         MYLOG(@" size check mission accomplished - cancel");
+@@ -285,7 +285,7 @@
+     }
+     else if (_status == kDownloadStatusDownload)
+     {
+-        int newSize = [ [_fileDownloaders objectAtIndex: _curFile] contentLength ];
++        int newSize = [ (SingleFileDownloader*)[_fileDownloaders objectAtIndex: _curFile] contentLength ];
+         [ _fileSizes replaceObjectAtIndex: _curFile withObject: [NSNumber numberWithInt: newSize ] ];
+     }
+ }
+diff --git a/libs/cocos2d-iphone/cocos2d/CCLayer.h b/libs/cocos2d-iphone/cocos2d/CCLayer.h
+index b5ea43f..20e9c32 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCLayer.h
++++ b/libs/cocos2d-iphone/cocos2d/CCLayer.h
+@@ -54,24 +54,13 @@ typedef enum {
+  - It can receive Mouse events on Mac
+ */
+ #ifdef __CC_PLATFORM_IOS
+-@interface CCLayer : CCNode <CCAccelerometerDelegate, CCTouchAllAtOnceDelegate, CCTouchOneByOneDelegate>
++@interface CCLayer : CCNode <CCTouchAllAtOnceDelegate, CCTouchOneByOneDelegate>
+ {
+ 	BOOL _touchEnabled;
+ 	NSInteger _touchPriority;
+ 	BOOL _touchMode;
+-	
+-	BOOL _accelerometerEnabled;
+ }
+ 
+-/** whether or not it will receive Accelerometer events
+- You can enable / disable accelerometer events with this property.
+-
+- Valid only on iOS. Not valid on Mac.
+-
+- @since v0.8.1
+- */
+-@property(nonatomic, assign, getter = isAccelerometerEnabled) BOOL accelerometerEnabled;
+-
+ /** whether or not it will receive Touch events
+  @since v0.8.1
+  */
+@@ -84,11 +73,6 @@ typedef enum {
+  */
+ @property(nonatomic, assign) ccTouchesMode touchMode;
+ 
+-/** sets the accelerometer's update frequency. A value of 1/2 means that the callback is going to be called twice per second.
+- @since v2.1
+- */
+--(void) setAccelerometerInterval:(float)interval;
+-
+ 
+ #elif defined(__CC_PLATFORM_MAC)
+ 
+diff --git a/libs/cocos2d-iphone/cocos2d/CCLayer.m b/libs/cocos2d-iphone/cocos2d/CCLayer.m
+index ad7c339..83f15b2 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCLayer.m
++++ b/libs/cocos2d-iphone/cocos2d/CCLayer.m
+@@ -74,9 +74,7 @@
+ 		_touchPriority = 0;
+ 		_touchMode = kCCTouchesAllAtOnce;
+ 
+-#ifdef __CC_PLATFORM_IOS
+-		_accelerometerEnabled = NO;
+-#elif defined(__CC_PLATFORM_MAC)
++#ifdef __CC_PLATFORM_MAC
+         _gestureEnabled = NO;
+         _gesturePriority = 0;
+ 		_mouseEnabled = NO;
+@@ -100,29 +98,6 @@
+ 		[[director touchDispatcher] addTargetedDelegate:self priority:_touchPriority swallowsTouches:YES];
+ }
+ 
+--(BOOL) isAccelerometerEnabled
+-{
+-	return _accelerometerEnabled;
+-}
+-
+--(void) setAccelerometerEnabled:(BOOL)enabled
+-{
+-	if( enabled != _accelerometerEnabled ) {
+-		_accelerometerEnabled = enabled;
+-		if( _isRunning ) {
+-			if( enabled )
+-				[[UIAccelerometer sharedAccelerometer] setDelegate:(id<UIAccelerometerDelegate>)self];
+-			else
+-				[[UIAccelerometer sharedAccelerometer] setDelegate:nil];
+-		}
+-	}
+-}
+-
+--(void) setAccelerometerInterval:(float)interval
+-{
+-	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:interval];
+-}
+-
+ -(BOOL) isTouchEnabled
+ {
+ 	return _touchEnabled;
+@@ -360,11 +335,6 @@
+ // Can't register mouse, touches here because of #issue #1018, and #1021
+ -(void) onEnterTransitionDidFinish
+ {
+-#ifdef __CC_PLATFORM_IOS
+-	if( _accelerometerEnabled )
+-		[[UIAccelerometer sharedAccelerometer] setDelegate:(id<UIAccelerometerDelegate>)self];
+-#endif
+-
+ 	[super onEnterTransitionDidFinish];
+ }
+ 
+@@ -377,9 +347,6 @@
+ 	if( _touchEnabled )
+ 		[[director touchDispatcher] removeDelegate:self];
+ 
+-	if( _accelerometerEnabled )
+-		[[UIAccelerometer sharedAccelerometer] setDelegate:nil];
+-
+ #elif defined(__CC_PLATFORM_MAC)
+ 	CCEventDispatcher *eventDispatcher = [director eventDispatcher];
+ 	if( _mouseEnabled )
+diff --git a/libs/cocos2d-iphone/cocos2d/CCProtocols.h b/libs/cocos2d-iphone/cocos2d/CCProtocols.h
+index 62d0619..906f217 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCProtocols.h
++++ b/libs/cocos2d-iphone/cocos2d/CCProtocols.h
+@@ -144,17 +144,3 @@
+ #endif // __CC_PLATFORM_IOS
+ 
+ @end
+-
+-
+-#pragma mark - CCAccelerometerDelegate
+-
+-#ifdef __CC_PLATFORM_IOS
+-/** CCAccelerometerDelegate delegate */
+-@class UIAcceleration;
+-@class UIAccelerometer;
+-@protocol CCAccelerometerDelegate <NSObject>
+-
+-@optional
+-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
+-@end
+-#endif // __CC_PLATFORM_IOS
+diff --git a/libs/cocos2d-iphone/cocos2d/CCTMXLayer.h b/libs/cocos2d-iphone/cocos2d/CCTMXLayer.h
+index 444014a..8e66eaf 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCTMXLayer.h
++++ b/libs/cocos2d-iphone/cocos2d/CCTMXLayer.h
+@@ -69,7 +69,7 @@
+ 	CGSize				_mapTileSize;
+ 	uint32_t			*_tiles;			// GID are 32 bit
+ 	NSUInteger			_layerOrientation;
+-	NSMutableArray		*_properties;
++	NSMutableDictionary		*_properties;
+ 
+ 	unsigned char		_opacity; // TMX Layer supports opacity
+ 
+@@ -97,7 +97,7 @@
+ /** Layer orientation, which is the same as the map orientation */
+ @property (nonatomic,readwrite) NSUInteger layerOrientation;
+ /** properties from the layer. They can be added using Tiled */
+-@property (nonatomic,readwrite,retain) NSMutableArray *properties;
++@property (nonatomic,readwrite,retain) NSMutableDictionary *properties;
+ 
+ /** creates a CCTMXLayer with an tileset info, a layer info and a map info */
+ +(id) layerWithTilesetInfo:(CCTMXTilesetInfo*)tilesetInfo layerInfo:(CCTMXLayerInfo*)layerInfo mapInfo:(CCTMXMapInfo*)mapInfo;
+diff --git a/libs/cocos2d-iphone/cocos2d/ccDeprecated.h b/libs/cocos2d-iphone/cocos2d/ccDeprecated.h
+index 93f215c..d98b63e 100644
+--- a/libs/cocos2d-iphone/cocos2d/ccDeprecated.h
++++ b/libs/cocos2d-iphone/cocos2d/ccDeprecated.h
+@@ -163,8 +163,6 @@ DEPRECATED_ATTRIBUTE @interface MacView : CCGLView
+ #if __CC_PLATFORM_IOS
+ // new: setTouchEnabled:
+ -(void) setIsTouchEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
+-// new: setAccelerometerEnabled:
+--(void) setIsAccelerometerEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
+ #elif __CC_PLATFORM_MAC
+ -(void) setIsTouchEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
+ -(void) setIsKeyboardEnabled:(BOOL)enabled DEPRECATED_ATTRIBUTE;
+diff --git a/libs/cocos2d-iphone/cocos2d/ccDeprecated.m b/libs/cocos2d-iphone/cocos2d/ccDeprecated.m
+index 580587a..08fdccf 100644
+--- a/libs/cocos2d-iphone/cocos2d/ccDeprecated.m
++++ b/libs/cocos2d-iphone/cocos2d/ccDeprecated.m
+@@ -134,10 +134,6 @@ void ccGLUniformModelViewProjectionMatrix( CCGLProgram* program )
+ {
+ 	[self setTouchEnabled:enabled];
+ }
+--(void) setIsAccelerometerEnabled:(BOOL)enabled
+-{
+-	[self setAccelerometerEnabled:enabled];
+-}
+ #elif __CC_PLATFORM_MAC
+ -(void) setIsTouchEnabled:(BOOL)enabled
+ {
+diff --git a/libs/lua/src/luaconf.h b/libs/lua/src/luaconf.h
+index e2cb261..2ce9471 100644
+--- a/libs/lua/src/luaconf.h
++++ b/libs/lua/src/luaconf.h
+@@ -11,6 +11,8 @@
+ #include <limits.h>
+ #include <stddef.h>
+ 
++// Force use of mkstemp (tmpnam is deprecated)
++#define LUA_USE_MKSTEMP
+ 
+ /*
+ ** ==================================================================
