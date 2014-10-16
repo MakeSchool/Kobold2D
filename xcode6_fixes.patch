@@ -1,0 +1,120 @@
+commit d4fe657f075e2df1737eedf09e85f895bc3991c7
+Author: Ben-G <Benjamin.Encz@gmail.com>
+Date:   Thu Oct 16 10:57:44 2014 +0200
+
+    fixes for Xcode 6
+
+diff --git a/kobold2d/KKGameKitHelper.m b/kobold2d/KKGameKitHelper.m
+index 4f08ca6..4e04627 100755
+--- a/kobold2d/KKGameKitHelper.m
++++ b/kobold2d/KKGameKitHelper.m
+@@ -547,6 +547,8 @@ static NSString* kCachedAchievementsFile = @"CachedAchievements.archive";
+ 				[delegate onPlayerDisconnected:playerID];
+ 			}
+ 			break;
++        default:
++            break;
+ 	}
+ 	
+ 	if (matchStarted == NO && match.expectedPlayerCount == 0)
+diff --git a/kobold2d/KKMain.m b/kobold2d/KKMain.m
+index 1bd1ecd..592ca14 100755
+--- a/kobold2d/KKMain.m
++++ b/kobold2d/KKMain.m
+@@ -55,7 +55,6 @@ int KKMain(int argc, char* argv[], KKMainParameters* userParameters)
+ 		// Mac OS X specific startup code
+ 		int retVal = NSApplicationMain(argc, (const char**)argv);
+ #endif
+-		
+ 		return retVal;
+ 	}
+ }
+diff --git a/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced/CCMenuAdvanced.m b/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced/CCMenuAdvanced.m
+index 1dce1ce..337e94c 100644
+--- a/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced/CCMenuAdvanced.m
++++ b/libs/cocos2d-iphone-extensions/Extensions/CCMenuAdvanced/CCMenuAdvanced.m
+@@ -264,7 +264,7 @@
+ 	
+ 	// Fix position of menuItem if it's the only one.
+ 	if ([_children count] == 1)
+-		[[_children objectAtIndex: 0] setPosition: ccp(width / 2.0f, height / 2.0f ) ];
++		[((CCNode *)[_children objectAtIndex: 0]) setPosition: ccp(width / 2.0f, height / 2.0f ) ];
+ 	
+ #ifdef __MAC_OS_X_VERSION_MAX_ALLOWED
+ 	if (bottomToTop)
+diff --git a/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/CCVideoPlayerImpliOS.m b/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/CCVideoPlayerImpliOS.m
+index 23f7f91..8c35a45 100644
+--- a/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/CCVideoPlayerImpliOS.m
++++ b/libs/cocos2d-iphone-extensions/Extensions/CCVideoPlayer/iOS/CCVideoPlayerImpliOS.m
+@@ -110,15 +110,15 @@
+ 	{
+ 		[ theMovie setControlStyle: MPMovieControlStyleNone ];
+ 	}
+-//#ifdef __IPHONE_OS_VERSION_MIN_ALLOWED
+-//#if __IPHONE_OS_VERSION_MAX_ALLOWED < 30200
++#ifdef __IPHONE_OS_VERSION_MIN_ALLOWED
++#if __IPHONE_OS_VERSION_MAX_ALLOWED < 30200
+ 	else if ( [theMovie respondsToSelector:@selector(setMovieControlMode:)] )
+ 	{
+ 		
+ 		[theMovie setMovieControlMode: MPMovieControlModeHidden]; 
+ 	}
+-//#endif
+-//#endif
++#endif
++#endif
+ 	
+ 	
+     // Register for the playback finished notification.
+diff --git a/libs/cocos2d-iphone/cocos2d/CCAction.m b/libs/cocos2d-iphone/cocos2d/CCAction.m
+index 77c673e..f19c55b 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCAction.m
++++ b/libs/cocos2d-iphone/cocos2d/CCAction.m
+@@ -328,10 +328,10 @@
+ 			return;
+ 
+ 		CGPoint tempPos = ccpSub( _halfScreenSize, _followedNode.position);
+-		[_target setPosition:ccp(clampf(tempPos.x, _leftBoundary, _rightBoundary), clampf(tempPos.y, _bottomBoundary, _topBoundary))];
++		[(CCNode *) _target setPosition:ccp(clampf(tempPos.x, _leftBoundary, _rightBoundary), clampf(tempPos.y, _bottomBoundary, _topBoundary))];
+ 	}
+ 	else
+-		[_target setPosition:ccpSub( _halfScreenSize, _followedNode.position )];
++		[(CCNode *) _target setPosition:ccpSub( _halfScreenSize, _followedNode.position )];
+ }
+ 
+ 
+diff --git a/libs/cocos2d-iphone/cocos2d/CCActionCatmullRom.m b/libs/cocos2d-iphone/cocos2d/CCActionCatmullRom.m
+index e67b7a8..ca1da73 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCActionCatmullRom.m
++++ b/libs/cocos2d-iphone/cocos2d/CCActionCatmullRom.m
+@@ -277,7 +277,7 @@ inline CGPoint ccCardinalSplineAt( CGPoint p0, CGPoint p1, CGPoint p2, CGPoint p
+ 
+ -(void) updatePosition:(CGPoint)newPos
+ {
+-	[_target setPosition:newPos];
++	[(CCNode *)_target setPosition:newPos];
+ 	_previousPosition = newPos;
+ }
+ 
+@@ -303,7 +303,7 @@ inline CGPoint ccCardinalSplineAt( CGPoint p0, CGPoint p1, CGPoint p2, CGPoint p
+ -(void) updatePosition:(CGPoint)newPos
+ {
+ 	CGPoint p = ccpAdd(newPos, _startPosition);
+-	[_target setPosition:p];
++	[(CCNode *)_target setPosition:p];
+ 	_previousPosition = p;
+ }
+ 
+diff --git a/libs/cocos2d-iphone/cocos2d/CCActionInterval.m b/libs/cocos2d-iphone/cocos2d/CCActionInterval.m
+index 8763cf6..83f1ce2 100644
+--- a/libs/cocos2d-iphone/cocos2d/CCActionInterval.m
++++ b/libs/cocos2d-iphone/cocos2d/CCActionInterval.m
+@@ -687,7 +687,7 @@
+ 	CGPoint diff = ccpSub(currentPos, _previousPos);
+ 	_startPos = ccpAdd( _startPos, diff);
+ 	CGPoint newPos =  ccpAdd( _startPos, ccpMult(_positionDelta, t) );
+-	[_target setPosition: newPos];
++	[(CCNode*) _target setPosition: newPos];
+ 	_previousPos = newPos;
+ #else
+ 	[node setPosition: ccpAdd( _startPos, ccpMult(_positionDelta, t))];
