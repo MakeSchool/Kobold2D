@@ -55,7 +55,6 @@ int KKMain(int argc, char* argv[], KKMainParameters* userParameters)
 		// Mac OS X specific startup code
 		int retVal = NSApplicationMain(argc, (const char**)argv);
 #endif
-		
 		return retVal;
 	}
 }

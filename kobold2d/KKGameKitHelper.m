@@ -547,6 +547,8 @@ static NSString* kCachedAchievementsFile = @"CachedAchievements.archive";
 				[delegate onPlayerDisconnected:playerID];
 			}
 			break;
+        default:
+            break;
 	}
 	
 	if (matchStarted == NO && match.expectedPlayerCount == 0)
